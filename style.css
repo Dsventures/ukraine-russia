@@ -1,0 +1,42 @@
+.tv9-interactives {
+    background-color: #e8e8e8;
+}
+.tv9-interactives > * {
+    text-align: center;
+    font-family: 'Georama',
+    sans-serif;
+}
+
+.interactive__main-title{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.tv9-interactives p {
+    width: 90%;
+    margin: 15px auto;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+p.interactive__main-desc{
+    font-size: 18px;
+    line-height: 24px;
+    color: #888;
+    margin: 0 auto 15px auto;
+}
+
+/* Timeline of Events */
+
+section.interective__timeline{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: yellow; */
+    left: 0 !important;
+}
+
+.timeline__point{
+    position: absolute;
+}
+
