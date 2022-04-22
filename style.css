@@ -1,5 +1,6 @@
 .tv9-interactives {
     background-color: #e8e8e8;
+    overflow-x: hidden;
 }
 .tv9-interactives > * {
     text-align: center;
@@ -14,7 +15,7 @@
 
 .tv9-interactives p {
     width: 90%;
-    margin: 15px auto;
+    margin: 30px auto;
     font-size: 16px;
     line-height: 20px;
 }
@@ -26,17 +27,161 @@ p.interactive__main-desc{
     margin: 0 auto 15px auto;
 }
 
+
 /* Timeline of Events */
+
+.sec1-years {
+    list-style: none;
+    display: flex; 
+    justify-content: space-between;
+    flex:1;
+    align-items: baseline;
+    column-gap: 20px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.sec1-years::after {
+    content: '';
+    position: absolute;
+    width: 347%;
+    height: 3px;
+    background-color: black;
+    bottom: -14px;
+    z-index: -1;
+    left: 57px;
+}
+.sec1-years li{
+    flex-basis: 110px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 12px;
+    position: relative;
+}
+.sec1-years li::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+    border-radius: 50%;
+}
+
+.sec1-years {
+
+}
 
 section.interective__timeline{
     position: relative;
     width: 100vw;
     height: 100vh;
-    /* background-color: yellow; */
-    left: 0 !important;
 }
 
-.timeline__point{
+.timeline__point {
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toe-parent{
+    position: relative;
+}
+
+.interective__invasion{
+    height: 100vh; position: relative;
+}
+
+.sec2-nav{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sec2-nav .sec2-years{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: baseline;
+    column-gap: 0;
+    position: relative;
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+.sec2-nav .sec2-years li{
+    flex-basis: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 12px;
+    position: relative;
+}
+.sec2-nav .sec2-years li i{
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+}
+.sec2-nav .sec2-years li span{
+    display: block;
+    margin: 25px 0 0 0;
+    background-color: red;
+    padding: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.sec2-nav .sec2-years li span::before{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    width: 0;
+    border-bottom: 8px solid red;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    transform: translateX(-50%);
+}
+
+.invasion-map__slides{ position: relative;}
+
+.invasion-map__slide{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.invasion-map__slide div{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px){
+    section.interective__timeline {
+        left: 0 !important;
+    }
+}
+
+@media (min-width: 1024px){
+    .tv9-interactives{
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow-y: hidden;
+    }
+
+    section.interective__timeline {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
 }
 
