@@ -229,6 +229,15 @@ tl2
   .from(".sec2-slide10", { opacity: 0 }, "ten")
   .to(".sec2-slide10", { opacity: 1 }, "ten-end");
 
+// 11
+// tl2
+//   .from("#sec2-nav11 span", { opacity: 0 }, "eleven")
+//   .to("#sec2-nav11 span", { opacity: 0 }, "eleven-end")
+//   .to("#sec2-nav11 i", { backgroundColor: "red", scale: 2 }, "eleven")
+//   .to("#sec2-nav11 i", { backgroundColor: "#000", scale: 1 }, "eleven-end")
+//   .from(".sec2-slide11", { opacity: 0 }, "eleven")
+//   .to(".sec2-slide11", { opacity: 1 }, "eleven-end");
+
 var pinOnly2 = ScrollTrigger.create({
   animation: tl2,
   trigger: ".interective__invasion",

@@ -121,7 +121,7 @@ section.interective__timeline{
     align-items: baseline;
     column-gap: 0;
     position: relative;
-    margin: 0 0 50px 0;
+    margin: 0 0 0 0;
     padding: 0;
 }
 .sec2-nav .sec2-years li{
@@ -149,6 +149,7 @@ section.interective__timeline{
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
+    visibility: hidden;
 }
 .sec2-nav .sec2-years li span::before{
     content: "";
@@ -165,13 +166,14 @@ section.interective__timeline{
 .invasion-map__slides{ position: relative;}
 
 .invasion-map__slide{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        width: 100%;
 }
 .invasion-map__slide div{
     display: flex;
