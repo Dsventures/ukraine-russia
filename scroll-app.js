@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Animate all p tags
 
-var sections = gsap.utils.toArray("p");
+var sections = gsap.utils.toArray(".scroll-p");
 sections.forEach((section) => {
   gsap.from(section, {
     opacity: 0,
@@ -11,7 +11,7 @@ sections.forEach((section) => {
       start: "top 75%",
       scrub: true,
       end: "bottom 25%",
-      markers: true,
+      markers: false,
     },
   });
 });
@@ -29,7 +29,7 @@ tl.from(".sec1-slide1", { opacity: 1 }, "one")
   .to(".sec1-slide1", { opacity: 1 })
   .to(".sec1-slide1", { opacity: 0 }, "one-end")
   .to("#dec2021", activeState, "one")
-  .from(".sec1-years", { opacity: 0 }, "one")
+  .from(".sec1-years", { opacity: 1 }, "one")
   .to("#dec2021", inActiveState, "one-end");
 
 // 2
@@ -324,7 +324,7 @@ tl4
     { color: "red", fontSize: "17px", fontWeight: "bold" },
     "one"
   )
-  .from(".sec3-years", { opacity: 0 }, "one")
+  .from(".sec3-years", { opacity: 1 }, "one")
   .to(
     "#sec3year1",
     { color: "grey", fontSize: "12px", fontWeight: "normal" },
@@ -341,7 +341,7 @@ tl4
     { color: "red", fontSize: "17px", fontWeight: "bold" },
     "two"
   )
-  .to(".sec3-years", { x: "-124px" }, "two")
+  .to(".sec3-years", { x: "-70px" }, "two")
   .to(
     "#sec3year2",
     { color: "grey", fontSize: "12px", fontWeight: "normal" },
@@ -358,7 +358,7 @@ tl4
     { color: "red", fontSize: "17px", fontWeight: "bold" },
     "three"
   )
-  .to(".sec3-years", { x: "-224px" }, "three")
+  .to(".sec3-years", { x: "-140px" }, "three")
   .to(
     "#sec3year3",
     { color: "grey", fontSize: "12px", fontWeight: "normal" },
@@ -367,7 +367,7 @@ tl4
 
 // 4
 tl4
-  .from(".sec-slide4", { opacity: 0 }, "four")
+  .from(".sec3-slide4", { opacity: 0 }, "four")
   .to(".sec3-slide4", { opacity: 1 })
   .to(".sec3-slide4", { opacity: 0 }, "four-end")
   .to(
@@ -375,7 +375,7 @@ tl4
     { color: "red", fontSize: "17px", fontWeight: "bold" },
     "four"
   )
-  .to(".sec3-years", { x: "-324px" }, "four")
+  .to(".sec3-years", { x: "-210px" }, "four")
   .to(
     "#sec3year4",
     { color: "grey", fontSize: "12px", fontWeight: "normal" },
@@ -384,7 +384,7 @@ tl4
 
 // 5
 tl4
-  .from(".sec-slide5", { opacity: 0 }, "five")
+  .from(".sec3-slide5", { opacity: 0 }, "five")
   .to(".sec3-slide5", { opacity: 1 })
   .to(".sec3-slide5", { opacity: 0 }, "five-end")
   .to(
@@ -392,7 +392,7 @@ tl4
     { color: "red", fontSize: "17px", fontWeight: "bold" },
     "five"
   )
-  .to(".sec3-years", { x: "-324px" }, "five")
+  .to(".sec3-years", { x: "-280px" }, "five")
   .to(
     "#sec3year5",
     { color: "grey", fontSize: "12px", fontWeight: "normal" },
@@ -401,7 +401,7 @@ tl4
 
 // 6
 tl4
-  .from(".sec-slide6", { opacity: 0 }, "six")
+  .from(".sec3-slide6", { opacity: 0 }, "six")
   .to(".sec3-slide6", { opacity: 1 })
   .to(".sec3-slide6", { opacity: 0 }, "six-end")
   .to(
@@ -409,7 +409,7 @@ tl4
     { color: "red", fontSize: "17px", fontWeight: "bold" },
     "six"
   )
-  .to(".sec3-years", { x: "-324px" }, "six")
+  .to(".sec3-years", { x: "-350px" }, "six")
   .to(
     "#sec3year6",
     { color: "grey", fontSize: "12px", fontWeight: "normal" },
@@ -418,7 +418,7 @@ tl4
 
 // 7
 tl4
-  .from(".sec-slide7", { opacity: 0 }, "seven")
+  .from(".sec3-slide7", { opacity: 0 }, "seven")
   .to(".sec3-slide7", { opacity: 1 })
   .to(".sec3-slide7", { opacity: 0 }, "seven-end")
   .to(
@@ -426,11 +426,215 @@ tl4
     { color: "red", fontSize: "17px", fontWeight: "bold" },
     "seven"
   )
-  .to(".sec3-years", { x: "-324px" }, "seven")
+  .to(".sec3-years", { x: "-420px" }, "seven")
   .to(
     "#sec3year7",
     { color: "grey", fontSize: "12px", fontWeight: "normal" },
     "seven-end"
+  );
+
+// 8
+tl4
+  .from(".sec3-slide8", { opacity: 0 }, "eight")
+  .to(".sec3-slide8", { opacity: 1 })
+  .to(".sec3-slide8", { opacity: 0 }, "eight-end")
+  .to(
+    "#sec3year8",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "eight"
+  )
+  .to(".sec3-years", { x: "-490px" }, "eight")
+  .to(
+    "#sec3year8",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "eight-end"
+  );
+
+// 9
+tl4
+  .from(".sec3-slide9", { opacity: 0 }, "nine")
+  .to(".sec3-slide9", { opacity: 1 })
+  .to(".sec3-slide9", { opacity: 0 }, "nine-end")
+  .to(
+    "#sec3year9",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "nine"
+  )
+  .to(".sec3-years", { x: "-560px" }, "nine")
+  .to(
+    "#sec3year9",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "nine-end"
+  );
+
+// 10
+tl4
+  .from(".sec3-slide10", { opacity: 0 }, "ten")
+  .to(".sec3-slide10", { opacity: 1 })
+  .to(".sec3-slide10", { opacity: 0 }, "ten-end")
+  .to(
+    "#sec3year10",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "ten"
+  )
+  .to(".sec3-years", { x: "-630px" }, "ten")
+  .to(
+    "#sec3year10",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "ten-end"
+  );
+
+// 11
+tl4
+  .from(".sec3-slide11", { opacity: 0 }, "eleven")
+  .to(".sec3-slide11", { opacity: 1 })
+  .to(".sec3-slide11", { opacity: 0 }, "eleven-end")
+  .to(
+    "#sec3year11",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "eleven"
+  )
+  .to(".sec3-years", { x: "-700px" }, "eleven")
+  .to(
+    "#sec3year11",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "eleven-end"
+  );
+
+// 12
+tl4
+  .from(".sec3-slide12", { opacity: 0 }, "twelve")
+  .to(".sec3-slide12", { opacity: 1 })
+  .to(".sec3-slide12", { opacity: 0 }, "twelve-end")
+  .to(
+    "#sec3year12",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "twelve"
+  )
+  .to(".sec3-years", { x: "-770px" }, "twelve")
+  .to(
+    "#sec3year12",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "twelve-end"
+  );
+
+// 13
+tl4
+  .from(".sec3-slide13", { opacity: 0 }, "thirteen")
+  .to(".sec3-slide13", { opacity: 1 })
+  .to(".sec3-slide13", { opacity: 0 }, "thirteen-end")
+  .to(
+    "#sec3year13",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "thirteen"
+  )
+  .to(".sec3-years", { x: "-880px" }, "thirteen")
+  .to(
+    "#sec3year13",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "thirteen-end"
+  );
+
+// 14
+tl4
+  .from(".sec3-slide14", { opacity: 0 }, "fourteen")
+  .to(".sec3-slide14", { opacity: 1 })
+  .to(".sec3-slide14", { opacity: 0 }, "fourteen-end")
+  .to(
+    "#sec3year14",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "fourteen"
+  )
+  .to(".sec3-years", { x: "-950px" }, "fourteen")
+  .to(
+    "#sec3year14",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "fourteen-end"
+  );
+
+// 15
+tl4
+  .from(".sec3-slide15", { opacity: 0 }, "fifteen")
+  .to(".sec3-slide15", { opacity: 1 })
+  .to(".sec3-slide15", { opacity: 0 }, "fifteen-end")
+  .to(
+    "#sec3year15",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "fifteen"
+  )
+  .to(".sec3-years", { x: "-1020px" }, "fifteen")
+  .to(
+    "#sec3year15",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "fifteen-end"
+  );
+
+// 16
+tl4
+  .from(".sec3-slide16", { opacity: 0 }, "sixteen")
+  .to(".sec3-slide16", { opacity: 1 })
+  .to(".sec3-slide16", { opacity: 0 }, "sixteen-end")
+  .to(
+    "#sec3year16",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "sixteen"
+  )
+  .to(".sec3-years", { x: "-1100px" }, "sixteen")
+  .to(
+    "#sec3year16",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "sixteen-end"
+  );
+
+// 17
+tl4
+  .from(".sec3-slide17", { opacity: 0 }, "seventeen")
+  .to(".sec3-slide17", { opacity: 1 })
+  .to(".sec3-slide17", { opacity: 0 }, "seventeen-end")
+  .to(
+    "#sec3year17",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "seventeen"
+  )
+  .to(".sec3-years", { x: "-1200px" }, "seventeen")
+  .to(
+    "#sec3year17",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "seventeen-end"
+  );
+
+// 18
+tl4
+  .from(".sec3-slide18", { opacity: 0 }, "eighteen")
+  .to(".sec3-slide18", { opacity: 1 })
+  .to(".sec3-slide18", { opacity: 0 }, "eighteen-end")
+  .to(
+    "#sec3year18",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "eighteen"
+  )
+  .to(".sec3-years", { x: "-1300px" }, "eighteen")
+  .to(
+    "#sec3year18",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "eighteen-end"
+  );
+
+// 19
+tl4
+  .from(".sec3-slide19", { opacity: 0 }, "nineteen")
+  .to(".sec3-slide19", { opacity: 1 })
+  .to(".sec3-slide19", { opacity: 1 }, "nineteen-end")
+  .to(
+    "#sec3year19",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "nineteen"
+  )
+  .to(".sec3-years", { x: "-1400px" }, "nineteen")
+  .to(
+    "#sec3year19",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "nineteen-end"
   );
 
 var pinOnly4 = ScrollTrigger.create({
