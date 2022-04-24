@@ -1,21 +1,22 @@
 .tv9-interactives {
-    background-color: #e8e8e8;
+    /* background-color: #e8e8e8; */
     overflow-x: hidden;
 }
-.tv9-interactives > * {
+
+.tv9-interactives>* {
     text-align: center;
     font-family: 'Georama',
-    sans-serif;
+        sans-serif;
 }
 
-.interactive__main-title{
+.interactive__main-title {
     font-size: 28px;
     font-weight: 700;
 }
 
 .interactive__main-img,
-.tv9-interactives img{
-    width: 90%;
+.tv9-interactives img {
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -26,7 +27,7 @@
     line-height: 20px;
 }
 
-p.interactive__main-desc{
+p.interactive__main-desc {
     font-size: 18px;
     line-height: 24px;
     color: #888;
@@ -38,32 +39,35 @@ p.interactive__main-desc{
 
 .sec1-years {
     list-style: none;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    flex:1;
-    align-items: baseline;
+    flex: 1;
+    align-items: end;
     column-gap: 20px;
     position: relative;
     margin-bottom: 50px;
 }
+
 .sec1-years::after {
     content: '';
     position: absolute;
     width: 347%;
-    height: 3px;
+    height: 0.1em;
     background-color: black;
     bottom: -14px;
     z-index: -1;
     left: 57px;
 }
-.sec1-years li{
+
+.sec1-years li {
     flex-basis: 110px;
     flex-grow: 0;
     flex-shrink: 0;
     font-size: 12px;
     position: relative;
 }
-.sec1-years li::after{
+
+.sec1-years li::after {
     content: "";
     width: 15px;
     height: 15px;
@@ -74,46 +78,51 @@ p.interactive__main-desc{
     border-radius: 50%;
 }
 
-.sec1-years {
+.sec1-years {}
 
-}
-
-section.interective__timeline{
+section.interective__timeline {
     position: relative;
     width: 100vw;
     height: 100vh;
 }
 
 .timeline__point {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-}
-.timeline__point img{
-    width: 90%;
-    margin: 20px auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
-.toe-parent{
+.timeline__point p {
+    margin: 0 auto;
+}
+
+.timeline__point img {
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+
+.toe-parent {
     position: relative;
 }
 
-.interective__invasion{
-    height: 100vh; position: relative;
+.interective__invasion {
+    height: 100vh;
+    position: relative;
 }
 
-.sec2-nav{
+.sec2-nav {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
-.sec2-nav .sec2-years{
+
+.sec2-nav .sec2-years {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -124,34 +133,38 @@ section.interective__timeline{
     margin: 0 0 0 0;
     padding: 0;
 }
-.sec2-nav .sec2-years li{
+
+.sec2-nav .sec2-years li {
     flex-basis: 0;
     flex-grow: 0;
     flex-shrink: 0;
     font-size: 12px;
     position: relative;
 }
-.sec2-nav .sec2-years li i{
-        width: 10px;
-        height: 10px;
-        background-color: #000;
-        display: block;
-        border-radius: 50%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-}
-.sec2-nav .sec2-years li span{
+
+.sec2-nav .sec2-years li i {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
     display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sec2-nav .sec2-years li span {
+    display: block;
+    visibility: hidden;
     margin: 25px 0 0 0;
     background-color: red;
     padding: 2px;
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
-    visibility: hidden;
 }
-.sec2-nav .sec2-years li span::before{
+
+.sec2-nav .sec2-years li span::before {
     content: "";
     position: absolute;
     top: 18px;
@@ -163,19 +176,22 @@ section.interective__timeline{
     transform: translateX(-50%);
 }
 
-.invasion-map__slides{ position: relative;}
-
-.invasion-map__slide{
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        width: 100%;
+.invasion-map__slides {
+    position: relative;
 }
-.invasion-map__slide div{
+
+.invasion-map__slide {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+}
+
+.invasion-map__slide div {
     display: flex;
     justify-content: space-between;
 }
@@ -187,20 +203,26 @@ section.interective__timeline{
 .interactive__sanction-maps {
     position: relative;
 }
-.interactive__sanction-maps h4{
-    margin: 0 auto 5px 20px; text-align: left;
-}
-.interactive__sanction-maps p{
-    margin: 0 auto 15px auto; text-align: left;
-}
-.interactive__sanction-maps div.sanction-slide {
-    position: absolute;
-    top: 0; left: 50%;
-    transform:translateX(-50%);
-        width: 100%;
+
+.interactive__sanction-maps h4 {
+    margin: 0 auto 5px 20px;
+    text-align: left;
 }
 
-.interective__citizen .flourish-chart{
+.interactive__sanction-maps p {
+    margin: 0 auto 15px auto;
+    text-align: left;
+}
+
+.interactive__sanction-maps div.sanction-slide {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.interective__citizen .flourish-chart {
     width: 90%;
     margin: 0 auto;
 }
@@ -211,7 +233,7 @@ section.interective__timeline{
     display: flex;
     justify-content: space-between;
     flex: 1;
-    align-items: baseline;
+    align-items: end;
     column-gap: 20px;
     position: relative;
     margin-bottom: 50px;
@@ -220,11 +242,11 @@ section.interective__timeline{
 .sec3-years::after {
     content: '';
     position: absolute;
-    width: 347%;
-    height: 3px;
+    width: 408%;
+    height: 1px;
     background-color: black;
-    bottom: -14px;
-    z-index: 0;
+    bottom: -16px;
+    z-index: -1;
     left: 57px;
 }
 
@@ -242,7 +264,7 @@ section.interective__timeline{
     height: 15px;
     background-color: grey;
     position: absolute;
-    bottom: -20px;
+    bottom: -22px;
     left: 15px;
     border-radius: 50%;
 }
@@ -254,14 +276,83 @@ section.interective__timeline{
     height: 100vh;
 }
 
-@media (max-width: 767px){
+/* SlideShow =========================== */
+/* ===================================== */
+
+.swiper {
+    width: 100%;
+    height: auto;
+    overflow: visible !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide p {
+    margin: 60px auto 0 auto !important;
+    width: 80%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    bottom: 110px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 88%;
+    width: calc(var(--swiper-navigation-size)/ 90 * 27) !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #666;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #000;
+    transform: scale(1.2);
+}
+
+
+
+
+@media (max-width: 767px) {
     section.interective__timeline {
         left: 0 !important;
     }
 }
 
-@media (min-width: 1024px){
-    .tv9-interactives{
+@media (min-width: 1024px) {
+    .tv9-interactives {
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
@@ -274,7 +365,7 @@ section.interective__timeline{
         height: 100vh;
     }
 
-    .interactive__sanction-maps img{
+    .interactive__sanction-maps img {
         width: 50%;
     }
 
@@ -282,4 +373,3 @@ section.interective__timeline{
         display: flex;
     }
 }
-
