@@ -254,55 +254,77 @@ var tl3 = gsap.timeline();
 // 1
 tl3
   .from(".interactive__sanction-map1", { opacity: 0 }, "one")
+  .to(".sec5Page1", { backgroundColor: "#000", scale: 2 }, "one")
+  .to(".sec5Page1", { backgroundColor: "#c4c4c4", scale: 1 }, "one-end")
   .to(".interactive__sanction-map1", { opacity: 0 }, "one-end");
 
 // 2
 tl3
   .from(".interactive__sanction-map2", { opacity: 0 }, "two")
+  .to(".sec5Page2", { backgroundColor: "#000", scale: 2 }, "two")
+  .to(".sec5Page2", { backgroundColor: "#c4c4c4", scale: 1 }, "two-end")
   .to(".interactive__sanction-map2", { opacity: 0 }, "two-end");
 
 // 3
 tl3
   .from(".interactive__sanction-map3", { opacity: 0 }, "three")
+  .to(".sec5Page3", { backgroundColor: "#000", scale: 2 }, "three")
+  .to(".sec5Page3", { backgroundColor: "#c4c4c4", scale: 1 }, "three-end")
   .to(".interactive__sanction-map3", { opacity: 0 }, "three-end");
 
 // 4
 tl3
   .from(".interactive__sanction-map4", { opacity: 0 }, "four")
+  .to(".sec5Page4", { backgroundColor: "#000", scale: 2 }, "four")
+  .to(".sec5Page4", { backgroundColor: "#c4c4c4", scale: 1 }, "four-end")
   .to(".interactive__sanction-map4", { opacity: 0 }, "four-end");
 
 // 5
 tl3
   .from(".interactive__sanction-map5", { opacity: 0 }, "five")
+  .to(".sec5Page5", { backgroundColor: "#000", scale: 2 }, "five")
+  .to(".sec5Page5", { backgroundColor: "#c4c4c4", scale: 1 }, "five-end")
   .to(".interactive__sanction-map5", { opacity: 0 }, "five-end");
 
 // 6
 tl3
   .from(".interactive__sanction-map6", { opacity: 0 }, "six")
+  .to(".sec5Page6", { backgroundColor: "#000", scale: 2 }, "six")
+  .to(".sec5Page6", { backgroundColor: "#c4c4c4", scale: 1 }, "six-end")
   .to(".interactive__sanction-map6", { opacity: 0 }, "six-end");
 
 // 7
 tl3
   .from(".interactive__sanction-map7", { opacity: 0 }, "seven")
+  .to(".sec5Page7", { backgroundColor: "#000", scale: 2 }, "seven")
+  .to(".sec5Page7", { backgroundColor: "#c4c4c4", scale: 1 }, "seven-end")
   .to(".interactive__sanction-map7", { opacity: 0 }, "seven-end");
 
 // 8
 tl3
   .from(".interactive__sanction-map8", { opacity: 0 }, "eight")
+  .to(".sec5Page8", { backgroundColor: "#000", scale: 2 }, "eight")
+  .to(".sec5Page8", { backgroundColor: "#c4c4c4", scale: 1 }, "eight-end")
   .to(".interactive__sanction-map8", { opacity: 0 }, "eight-end");
 
 // 9
 tl3
   .from(".interactive__sanction-map9", { opacity: 0 }, "nine")
+  .to(".sec5Page9", { backgroundColor: "#000", scale: 2 }, "nine")
+  .to(".sec5Page9", { backgroundColor: "#c4c4c4", scale: 1 }, "nine-end")
   .to(".interactive__sanction-map9", { opacity: 0 }, "nine-end");
 
 // 10
 tl3
   .from(".interactive__sanction-map10", { opacity: 0 }, "ten")
+  .to(".sec5Page10", { backgroundColor: "#000", scale: 2 }, "ten")
+  .to(".sec5Page10", { backgroundColor: "#c4c4c4", scale: 1 }, "ten-end")
   .to(".interactive__sanction-map10", { opacity: 0 }, "ten-end");
 
 // 11
-tl3.from(".interactive__sanction-map11", { opacity: 0 }, "eleven");
+tl3
+  .from(".interactive__sanction-map11", { opacity: 0 }, "eleven")
+  .to(".sec5Page11", { backgroundColor: "#000", scale: 2 }, "eleven");
 // .to(".interactive__sanction-map11", { opacity: 0 }, "eleven-end");
 
 var pinOnly3 = ScrollTrigger.create({
