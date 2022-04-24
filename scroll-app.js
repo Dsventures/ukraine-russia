@@ -241,11 +241,192 @@ var pinOnly2 = ScrollTrigger.create({
 var tl3 = gsap.timeline();
 
 // 1
-tl3.from(".interactive__sanction-map1", { opacity: 0 }, "one");
+tl3
+  .from(".interactive__sanction-map1", { opacity: 0 }, "one")
+  .to(".interactive__sanction-map1", { opacity: 0 }, "one-end");
+
+// 2
+tl3
+  .from(".interactive__sanction-map2", { opacity: 0 }, "two")
+  .to(".interactive__sanction-map2", { opacity: 0 }, "two-end");
+
+// 3
+tl3
+  .from(".interactive__sanction-map3", { opacity: 0 }, "three")
+  .to(".interactive__sanction-map3", { opacity: 0 }, "three-end");
+
+// 4
+tl3
+  .from(".interactive__sanction-map4", { opacity: 0 }, "four")
+  .to(".interactive__sanction-map4", { opacity: 0 }, "four-end");
+
+// 5
+tl3
+  .from(".interactive__sanction-map5", { opacity: 0 }, "five")
+  .to(".interactive__sanction-map5", { opacity: 0 }, "five-end");
+
+// 6
+tl3
+  .from(".interactive__sanction-map6", { opacity: 0 }, "six")
+  .to(".interactive__sanction-map6", { opacity: 0 }, "six-end");
+
+// 7
+tl3
+  .from(".interactive__sanction-map7", { opacity: 0 }, "seven")
+  .to(".interactive__sanction-map7", { opacity: 0 }, "seven-end");
+
+// 8
+tl3
+  .from(".interactive__sanction-map8", { opacity: 0 }, "eight")
+  .to(".interactive__sanction-map8", { opacity: 0 }, "eight-end");
+
+// 9
+tl3
+  .from(".interactive__sanction-map9", { opacity: 0 }, "nine")
+  .to(".interactive__sanction-map9", { opacity: 0 }, "nine-end");
+
+// 10
+tl3
+  .from(".interactive__sanction-map10", { opacity: 0 }, "ten")
+  .to(".interactive__sanction-map10", { opacity: 0 }, "ten-end");
+
+// 11
+tl3.from(".interactive__sanction-map11", { opacity: 0 }, "eleven");
+// .to(".interactive__sanction-map11", { opacity: 0 }, "eleven-end");
 
 var pinOnly3 = ScrollTrigger.create({
   animation: tl3,
   trigger: ".interective__sanction",
+  pin: true,
+  scrub: true,
+  start: "top top",
+  end: "+=600%",
+});
+
+var tl4 = gsap.timeline();
+
+// 1
+tl4
+  .from(".sec3-slide1", { opacity: 1 }, "one")
+  .to(".sec3-slide1", { opacity: 1 })
+  .to(".sec3-slide1", { opacity: 0 }, "one-end")
+  .to(
+    "#sec3year1",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "one"
+  )
+  .from(".sec3-years", { opacity: 0 }, "one")
+  .to(
+    "#sec3year1",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "one-end"
+  );
+
+// 2
+tl4
+  .from(".sec3-slide2", { opacity: 0 }, "two")
+  .to(".sec3-slide2", { opacity: 1 })
+  .to(".sec3-slide2", { opacity: 0 }, "two-end")
+  .to(
+    "#sec3year2",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "two"
+  )
+  .to(".sec3-years", { x: "-124px" }, "two")
+  .to(
+    "#sec3year2",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "two-end"
+  );
+
+// 3
+tl4
+  .from(".sec3-slide3", { opacity: 0 }, "three")
+  .to(".sec3-slide3", { opacity: 1 })
+  .to(".sec3-slide3", { opacity: 0 }, "three-end")
+  .to(
+    "#sec3year3",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "three"
+  )
+  .to(".sec3-years", { x: "-224px" }, "three")
+  .to(
+    "#sec3year3",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "three-end"
+  );
+
+// 4
+tl4
+  .from(".sec-slide4", { opacity: 0 }, "four")
+  .to(".sec3-slide4", { opacity: 1 })
+  .to(".sec3-slide4", { opacity: 0 }, "four-end")
+  .to(
+    "#sec3year4",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "four"
+  )
+  .to(".sec3-years", { x: "-324px" }, "four")
+  .to(
+    "#sec3year4",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "four-end"
+  );
+
+// 5
+tl4
+  .from(".sec-slide5", { opacity: 0 }, "five")
+  .to(".sec3-slide5", { opacity: 1 })
+  .to(".sec3-slide5", { opacity: 0 }, "five-end")
+  .to(
+    "#sec3year5",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "five"
+  )
+  .to(".sec3-years", { x: "-324px" }, "five")
+  .to(
+    "#sec3year5",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "five-end"
+  );
+
+// 6
+tl4
+  .from(".sec-slide6", { opacity: 0 }, "six")
+  .to(".sec3-slide6", { opacity: 1 })
+  .to(".sec3-slide6", { opacity: 0 }, "six-end")
+  .to(
+    "#sec3year6",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "six"
+  )
+  .to(".sec3-years", { x: "-324px" }, "six")
+  .to(
+    "#sec3year6",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "six-end"
+  );
+
+// 7
+tl4
+  .from(".sec-slide7", { opacity: 0 }, "seven")
+  .to(".sec3-slide7", { opacity: 1 })
+  .to(".sec3-slide7", { opacity: 0 }, "seven-end")
+  .to(
+    "#sec3year7",
+    { color: "red", fontSize: "17px", fontWeight: "bold" },
+    "seven"
+  )
+  .to(".sec3-years", { x: "-324px" }, "seven")
+  .to(
+    "#sec3year7",
+    { color: "grey", fontSize: "12px", fontWeight: "normal" },
+    "seven-end"
+  );
+
+var pinOnly4 = ScrollTrigger.create({
+  animation: tl4,
+  trigger: ".history_timeline",
   pin: true,
   scrub: true,
   start: "top top",

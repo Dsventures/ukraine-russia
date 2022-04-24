@@ -13,7 +13,8 @@
     font-weight: 700;
 }
 
-.interactive__main-img{
+.interactive__main-img,
+.tv9-interactives img{
     width: 90%;
     margin: 0 auto;
 }
@@ -184,10 +185,71 @@ section.interective__timeline{
 .interactive__sanction-maps {
     position: relative;
 }
-.interactive__sanction-maps div {
+.interactive__sanction-maps h4{
+    margin: 0 auto 5px 20px; text-align: left;
+}
+.interactive__sanction-maps p{
+    margin: 0 auto 15px auto; text-align: left;
+}
+.interactive__sanction-maps div.sanction-slide {
     position: absolute;
     top: 0; left: 50%;
     transform:translateX(-50%);
+        width: 100%;
+}
+
+.interective__citizen .flourish-chart{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* History */
+.sec3-years {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: baseline;
+    column-gap: 20px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.sec3-years::after {
+    content: '';
+    position: absolute;
+    width: 347%;
+    height: 3px;
+    background-color: black;
+    bottom: -14px;
+    z-index: 0;
+    left: 57px;
+}
+
+.sec3-years li {
+    flex-basis: 70px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 12px;
+    position: relative;
+}
+
+.sec3-years li::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+    border-radius: 50%;
+}
+
+.sec3-years {}
+
+.history_timeline {
+    position: relative;
+    height: 100vh;
 }
 
 @media (max-width: 767px){
@@ -208,6 +270,14 @@ section.interective__timeline{
         position: relative;
         width: 100%;
         height: 100vh;
+    }
+
+    .interactive__sanction-maps img{
+        width: 50%;
+    }
+
+    .interactive__sanction-maps div.sanction-slide {
+        display: flex;
     }
 }
 
