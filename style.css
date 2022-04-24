@@ -278,7 +278,8 @@ section.interective__timeline {
 }
 
 .interactive__natogfx {
-    margin-top: -100px;
+    /* margin-top: -100px; */
+    height: auto;
 }
 
 /* SlideShow =========================== */
@@ -346,8 +347,8 @@ section.interective__timeline {
     transform: scale(1.2);
 }
 
-.interective__military {
-    height: auto;
+.interective__military, .interective__history, .interactive__natogfx, .interactive_photogallery {
+    min-height: fit-content;
 }
 
 
