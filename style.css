@@ -22,7 +22,7 @@
 
 .tv9-interactives p {
     width: 90%;
-    margin: 30px auto;
+    margin: 20px auto;
     font-size: 16px;
     line-height: 20px;
 }
@@ -145,7 +145,7 @@ section.interective__timeline {
 .sec2-nav .sec2-years li i {
     width: 10px;
     height: 10px;
-    background-color: #000;
+    background-color: #c4c4c4;
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -178,6 +178,7 @@ section.interective__timeline {
 
 .invasion-map__slides {
     position: relative;
+    height: 411px;
 }
 
 .invasion-map__slide {
