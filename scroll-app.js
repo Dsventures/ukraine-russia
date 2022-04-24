@@ -132,6 +132,7 @@ var pinOnly = ScrollTrigger.create({
   scrub: true,
   start: "top top",
   end: "+=600%",
+  pinSpacing: true,
 });
 
 // Timeline of Invasion ========================== //
@@ -245,6 +246,7 @@ var pinOnly2 = ScrollTrigger.create({
   scrub: true,
   start: "top top",
   end: "+=600%",
+  pinSpacing: true,
 });
 
 var tl3 = gsap.timeline();
@@ -310,6 +312,7 @@ var pinOnly3 = ScrollTrigger.create({
   scrub: true,
   start: "top top",
   end: "+=600%",
+  pinSpacing: true,
 });
 
 var tl4 = gsap.timeline();
@@ -644,4 +647,5 @@ var pinOnly4 = ScrollTrigger.create({
   scrub: true,
   start: "top top",
   end: "+=600%",
+  pinSpacing: true,
 });
