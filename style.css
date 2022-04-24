@@ -13,6 +13,11 @@
     font-weight: 700;
 }
 
+.interactive__main-img{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .tv9-interactives p {
     width: 90%;
     margin: 30px auto;
@@ -79,10 +84,18 @@ section.interective__timeline{
 }
 
 .timeline__point {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+}
+.timeline__point img{
+    width: 90%;
+    margin: 20px auto;
 }
 
 .toe-parent{
@@ -162,6 +175,19 @@ section.interective__timeline{
 .invasion-map__slide div{
     display: flex;
     justify-content: space-between;
+}
+
+.interective__sanction {
+    height: 100vh;
+}
+
+.interactive__sanction-maps {
+    position: relative;
+}
+.interactive__sanction-maps div {
+    position: absolute;
+    top: 0; left: 50%;
+    transform:translateX(-50%);
 }
 
 @media (max-width: 767px){

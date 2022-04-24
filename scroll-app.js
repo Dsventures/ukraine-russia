@@ -237,3 +237,17 @@ var pinOnly2 = ScrollTrigger.create({
   start: "top top",
   end: "+=600%",
 });
+
+var tl3 = gsap.timeline();
+
+// 1
+tl3.from(".interactive__sanction-map1", { opacity: 0 }, "one");
+
+var pinOnly3 = ScrollTrigger.create({
+  animation: tl3,
+  trigger: ".interective__sanction",
+  pin: true,
+  scrub: true,
+  start: "top top",
+  end: "+=600%",
+});
