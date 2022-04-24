@@ -314,67 +314,12 @@ section.interective__timeline {
 
 /* SlideShow =========================== */
 /* ===================================== */
-.swiper {
-    width: 100%;
-    height: auto;
-    overflow: visible !important;
+.swiper-wrapper {
+    position: relative;
+    min-height: 450px;
 }
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-slide p {
-    margin: 60px auto 0 auto !important;
-    width: 80%;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.swiper-pagination {
-    bottom: 110px !important;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    top: 88%;
-    width: calc(var(--swiper-navigation-size)/ 90 * 27) !important;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    font-size: 24px;
-}
-
-.swiper-pagination-bullet {
-    background-color: #666;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #000;
-    transform: scale(1.2);
+.swiper-slide{
+    position: absolute;
 }
 
 /* .interective__military, .interective__history, .interactive__natogfx, .interactive_photogallery {
@@ -384,12 +329,39 @@ section.interective__timeline {
 .interective__military{
     height: 2300px;
 }
+.interective__history{ margin-top: 50px;}
 .interective__history,
-.interactive__natogfx,
-.interactive_photogallery {
+.interactive__natogfx {
     min-height: fit-content;
 }
 
+.interactive_photogallery{
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.sec6Nav {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sec6Nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 10px;
+}
+
+.sec6Nav li {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+}
 
 
 
