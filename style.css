@@ -194,6 +194,12 @@ section.interective__timeline {
 .invasion-map__slide div {
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.invasion-map__slide img {
+    order: 2;
 }
 
 .interective__sanction {
