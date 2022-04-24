@@ -341,10 +341,10 @@ section.interective__timeline {
 }
 
 .sec6Nav {
-    position: absolute;
-    bottom: 45px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    /* bottom: 45px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
 }
 
 .sec6Nav ul {

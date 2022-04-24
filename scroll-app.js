@@ -812,7 +812,7 @@ tl5
   .from(".swiper-slide20", { opacity: 0 }, "twenty")
   .to(".sec6Page20", { backgroundColor: "#000", scale: 2 }, "twenty")
   .to(".sec6Page20", { backgroundColor: "#c4c4c4", scale: 1 }, "twenty-end")
-  .to(".swiper-slide20", { opacity: 0 }, "twenty-end");
+  .to(".swiper-slide20", { opacity: 1 }, "twenty-end");
 
 var pinOnly5 = ScrollTrigger.create({
   animation: tl5,
