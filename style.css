@@ -327,7 +327,8 @@ section.interective__timeline {
 } */
 
 .interective__military{
-    height: 2300px;
+    /* height: 2300px; */
+    height: 3340px;
 }
 .interective__history{ margin-top: 50px;}
 .interective__history,
@@ -361,6 +362,52 @@ section.interective__timeline {
     height: 10px;
     background-color: #c4c4c4;
     border-radius: 50%;
+}
+
+.interactive_videogallery {
+    margin-bottom: 50px;
+}
+
+.interactive_videogallery ul {
+    list-style:none; padding: 0;
+}
+.interactive_videogallery ul li{
+    margin-bottom: 15px;
+}
+
+.interactive_videogallery ul li .vidthumb{ position: relative; width: 300px;}
+.interactive_videogallery ul li .relthumb{ position: relative; width: 300px;}
+.interactive_videogallery ul li .vidthumb::after{
+    content: '';
+    background-image: url(img/vid-icon.png);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 50;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.interactive_videogallery ul li a{
+    display: flex; text-align: left; text-decoration: none; color: #000;
+    column-gap: 15px;
+}
+.interactive_videogallery ul li a p{
+    margin: 0;
+}
+
+.interactive_videogallery ul li{
+    margin-bottom: 15px;
+}
+.interactive_videogallery ul li a{
+    display: flex; text-align: left; text-decoration: none; color: #000;
+    column-gap: 15px;
+}
+.interactive_videogallery ul li a p{
+    margin: 0;
 }
 
 
