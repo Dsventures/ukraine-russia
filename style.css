@@ -353,7 +353,16 @@ section.interective__timeline {
     transform: scale(1.2);
 }
 
-.interective__military, .interective__history, .interactive__natogfx, .interactive_photogallery {
+/* .interective__military, .interective__history, .interactive__natogfx, .interactive_photogallery {
+    min-height: fit-content;
+} */
+
+.interective__military{
+    height: 2300px;
+}
+.interective__history,
+.interactive__natogfx,
+.interactive_photogallery {
     min-height: fit-content;
 }
 
