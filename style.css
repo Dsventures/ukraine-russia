@@ -262,6 +262,10 @@ section.interective__timeline {
     margin: 0 auto;
 }
 
+.interactive__charts{
+    margin-bottom: 30px;
+}
+
 /* History */
 .sec3-years {
     list-style: none;
@@ -343,7 +347,7 @@ section.interective__timeline {
 }
 
 .interactive_photogallery{
-    height: 100vh;
+    height: auto;
     margin-top: 100px;
 }
 
@@ -414,6 +418,7 @@ section.interective__timeline {
 }
 .interactive_videogallery ul li a p{
     margin: 0;
+    font-weight: bold;
 }
 
 
