@@ -239,15 +239,15 @@ var pinOnly = ScrollTrigger.create({
 //   .from(".sec2-slide11", { opacity: 0 }, "eleven")
 //   .to(".sec2-slide11", { opacity: 1 }, "eleven-end");
 
-var pinOnly2 = ScrollTrigger.create({
-  // animation: tl2,
-  trigger: ".interective__invasion",
-  pin: true,
-  scrub: true,
-  start: "top top",
-  end: "+=600%",
-  pinSpacing: true,
-});
+// var pinOnly2 = ScrollTrigger.create({
+//   // animation: tl2,
+//   trigger: ".interective__invasion",
+//   pin: true,
+//   scrub: true,
+//   start: "top top",
+//   end: "+=600%",
+//   pinSpacing: true,
+// });
 
 var tl3 = gsap.timeline();
 
