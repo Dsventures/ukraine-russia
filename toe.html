@@ -108,7 +108,7 @@
       .sec1-years::after {
         content: "";
         position: absolute;
-        width: 453%;
+        width: 525%;
         height: 0.1em;
         background-color: black;
         bottom: 0;
@@ -331,9 +331,19 @@
             sections[swiper.activeIndex].id
           );
           selItem.classList.add("active");
-          var tl = gsap.timeline().to(".sec1-years", {
-            x: "-" + (swiper.activeIndex * 100 + 24) + "px",
-          });
+          if (swiper.activeIndex >= 0 && swiper.activeIndex < 5) {
+            var tl = gsap.timeline().to(".sec1-years", {
+              x: "-" + (swiper.activeIndex * 100 + 24) + "px",
+            });
+          } else if (swiper.activeIndex >= 5 && swiper.activeIndex < 9) {
+            var tl = gsap.timeline().to(".sec1-years", {
+              x: "-" + swiper.activeIndex * 115 + "px",
+            });
+          } else if (swiper.activeIndex >= 9) {
+            var tl = gsap.timeline().to(".sec1-years", {
+              x: "-" + swiper.activeIndex * 120 + "px",
+            });
+          }
         } else if (swiper.swipeDirection === "prev") {
           var allvals2 = document.getElementsByClassName("time1years");
           for (var j = 0; j < allvals2.length; j++) {

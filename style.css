@@ -208,7 +208,8 @@ section.interective__timeline {
 }
 
 .interective__sanction {
-    height: 100vh;
+    height: auto;
+    margin-bottom: 100px;
 }
 
 .interactive__sanction-maps {
@@ -332,7 +333,8 @@ section.interective__timeline {
 
 .interective__military{
     /* height: 2300px; */
-    height: 3700px;
+    height: auto;
+    margin-bottom: 100px;
 }
 .interective__history{ margin-top: 50px;}
 .interective__history,
