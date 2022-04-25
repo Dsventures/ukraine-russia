@@ -138,97 +138,97 @@ var pinOnly = ScrollTrigger.create({
 // Timeline of Invasion ========================== //
 // =============================================== //
 
-var tl2 = gsap.timeline();
+// var tl2 = gsap.timeline();
 
-// 1
-tl2
-  .from("#sec2-nav1 span", { opacity: 0 }, "one")
-  .to("#sec2-nav1 span", { opacity: 0 }, "one-end")
-  .to("#sec2-nav1 i", { backgroundColor: "#000", scale: 2 }, "one")
-  .to("#sec2-nav1 i", { backgroundColor: "#c4c4c4", scale: 1 }, "one-end")
-  .from(".sec2-slide1", { opacity: 1 }, "one")
-  .to(".sec2-slide1", { opacity: 0 }, "one-end");
+// // 1
+// tl2
+//   .from("#sec2-nav1 span", { opacity: 0 }, "one")
+//   .to("#sec2-nav1 span", { opacity: 0 }, "one-end")
+//   .to("#sec2-nav1 i", { backgroundColor: "#000", scale: 2 }, "one")
+//   .to("#sec2-nav1 i", { backgroundColor: "#c4c4c4", scale: 1 }, "one-end")
+//   .from(".sec2-slide1", { opacity: 1 }, "one")
+//   .to(".sec2-slide1", { opacity: 0 }, "one-end");
 
-// 2
-tl2
-  .from("#sec2-nav2 span", { opacity: 0 }, "two")
-  .to("#sec2-nav2 span", { opacity: 0 }, "two-end")
-  .to("#sec2-nav2 i", { backgroundColor: "#000", scale: 2 }, "two")
-  .to("#sec2-nav2 i", { backgroundColor: "#c4c4c4", scale: 1 }, "two-end")
-  .from(".sec2-slide2", { opacity: 0 }, "two")
-  .to(".sec2-slide2", { opacity: 0 }, "two-end");
+// // 2
+// tl2
+//   .from("#sec2-nav2 span", { opacity: 0 }, "two")
+//   .to("#sec2-nav2 span", { opacity: 0 }, "two-end")
+//   .to("#sec2-nav2 i", { backgroundColor: "#000", scale: 2 }, "two")
+//   .to("#sec2-nav2 i", { backgroundColor: "#c4c4c4", scale: 1 }, "two-end")
+//   .from(".sec2-slide2", { opacity: 0 }, "two")
+//   .to(".sec2-slide2", { opacity: 0 }, "two-end");
 
-// 3
-tl2
-  .from("#sec2-nav3 span", { opacity: 0 }, "three")
-  .to("#sec2-nav3 span", { opacity: 0 }, "three-end")
-  .to("#sec2-nav3 i", { backgroundColor: "#000", scale: 2 }, "three")
-  .to("#sec2-nav3 i", { backgroundColor: "#c4c4c4", scale: 1 }, "three-end")
-  .from(".sec2-slide3", { opacity: 0 }, "three")
-  .to(".sec2-slide3", { opacity: 0 }, "three-end");
+// // 3
+// tl2
+//   .from("#sec2-nav3 span", { opacity: 0 }, "three")
+//   .to("#sec2-nav3 span", { opacity: 0 }, "three-end")
+//   .to("#sec2-nav3 i", { backgroundColor: "#000", scale: 2 }, "three")
+//   .to("#sec2-nav3 i", { backgroundColor: "#c4c4c4", scale: 1 }, "three-end")
+//   .from(".sec2-slide3", { opacity: 0 }, "three")
+//   .to(".sec2-slide3", { opacity: 0 }, "three-end");
 
-// 4
-tl2
-  .from("#sec2-nav4 span", { opacity: 0 }, "four")
-  .to("#sec2-nav4 span", { opacity: 0 }, "four-end")
-  .to("#sec2-nav4 i", { backgroundColor: "#000", scale: 2 }, "four")
-  .to("#sec2-nav4 i", { backgroundColor: "#c4c4c4", scale: 1 }, "four-end")
-  .from(".sec2-slide4", { opacity: 0 }, "four")
-  .to(".sec2-slide4", { opacity: 0 }, "four-end");
+// // 4
+// tl2
+//   .from("#sec2-nav4 span", { opacity: 0 }, "four")
+//   .to("#sec2-nav4 span", { opacity: 0 }, "four-end")
+//   .to("#sec2-nav4 i", { backgroundColor: "#000", scale: 2 }, "four")
+//   .to("#sec2-nav4 i", { backgroundColor: "#c4c4c4", scale: 1 }, "four-end")
+//   .from(".sec2-slide4", { opacity: 0 }, "four")
+//   .to(".sec2-slide4", { opacity: 0 }, "four-end");
 
-// 5
-tl2
-  .from("#sec2-nav5 span", { opacity: 0 }, "five")
-  .to("#sec2-nav5 span", { opacity: 0 }, "five-end")
-  .to("#sec2-nav5 i", { backgroundColor: "#000", scale: 2 }, "five")
-  .to("#sec2-nav5 i", { backgroundColor: "#c4c4c4", scale: 1 }, "five-end")
-  .from(".sec2-slide5", { opacity: 0 }, "five")
-  .to(".sec2-slide5", { opacity: 0 }, "five-end");
+// // 5
+// tl2
+//   .from("#sec2-nav5 span", { opacity: 0 }, "five")
+//   .to("#sec2-nav5 span", { opacity: 0 }, "five-end")
+//   .to("#sec2-nav5 i", { backgroundColor: "#000", scale: 2 }, "five")
+//   .to("#sec2-nav5 i", { backgroundColor: "#c4c4c4", scale: 1 }, "five-end")
+//   .from(".sec2-slide5", { opacity: 0 }, "five")
+//   .to(".sec2-slide5", { opacity: 0 }, "five-end");
 
-// 6
-tl2
-  .from("#sec2-nav6 span", { opacity: 0 }, "six")
-  .to("#sec2-nav6 span", { opacity: 0 }, "six-end")
-  .to("#sec2-nav6 i", { backgroundColor: "#000", scale: 2 }, "six")
-  .to("#sec2-nav6 i", { backgroundColor: "#c4c4c4", scale: 1 }, "six-end")
-  .from(".sec2-slide6", { opacity: 0 }, "six")
-  .to(".sec2-slide6", { opacity: 0 }, "six-end");
+// // 6
+// tl2
+//   .from("#sec2-nav6 span", { opacity: 0 }, "six")
+//   .to("#sec2-nav6 span", { opacity: 0 }, "six-end")
+//   .to("#sec2-nav6 i", { backgroundColor: "#000", scale: 2 }, "six")
+//   .to("#sec2-nav6 i", { backgroundColor: "#c4c4c4", scale: 1 }, "six-end")
+//   .from(".sec2-slide6", { opacity: 0 }, "six")
+//   .to(".sec2-slide6", { opacity: 0 }, "six-end");
 
-// 7
-tl2
-  .from("#sec2-nav7 span", { opacity: 0 }, "seven")
-  .to("#sec2-nav7 span", { opacity: 0 }, "seven-end")
-  .to("#sec2-nav7 i", { backgroundColor: "#000", scale: 2 }, "seven")
-  .to("#sec2-nav7 i", { backgroundColor: "#c4c4c4", scale: 1 }, "seven-end")
-  .from(".sec2-slide7", { opacity: 0 }, "seven")
-  .to(".sec2-slide7", { opacity: 0 }, "seven-end");
+// // 7
+// tl2
+//   .from("#sec2-nav7 span", { opacity: 0 }, "seven")
+//   .to("#sec2-nav7 span", { opacity: 0 }, "seven-end")
+//   .to("#sec2-nav7 i", { backgroundColor: "#000", scale: 2 }, "seven")
+//   .to("#sec2-nav7 i", { backgroundColor: "#c4c4c4", scale: 1 }, "seven-end")
+//   .from(".sec2-slide7", { opacity: 0 }, "seven")
+//   .to(".sec2-slide7", { opacity: 0 }, "seven-end");
 
-// 8
-tl2
-  .from("#sec2-nav8 span", { opacity: 0 }, "eight")
-  .to("#sec2-nav8 span", { opacity: 0 }, "eight-end")
-  .to("#sec2-nav8 i", { backgroundColor: "#000", scale: 2 }, "eight")
-  .to("#sec2-nav8 i", { backgroundColor: "#c4c4c4", scale: 1 }, "eight-end")
-  .from(".sec2-slide8", { opacity: 0 }, "eight")
-  .to(".sec2-slide8", { opacity: 0 }, "eight-end");
+// // 8
+// tl2
+//   .from("#sec2-nav8 span", { opacity: 0 }, "eight")
+//   .to("#sec2-nav8 span", { opacity: 0 }, "eight-end")
+//   .to("#sec2-nav8 i", { backgroundColor: "#000", scale: 2 }, "eight")
+//   .to("#sec2-nav8 i", { backgroundColor: "#c4c4c4", scale: 1 }, "eight-end")
+//   .from(".sec2-slide8", { opacity: 0 }, "eight")
+//   .to(".sec2-slide8", { opacity: 0 }, "eight-end");
 
-// 9
-tl2
-  .from("#sec2-nav9 span", { opacity: 0 }, "nine")
-  .to("#sec2-nav9 span", { opacity: 0 }, "nine-end")
-  .to("#sec2-nav9 i", { backgroundColor: "#000", scale: 2 }, "nine")
-  .to("#sec2-nav9 i", { backgroundColor: "#c4c4c4", scale: 1 }, "nine-end")
-  .from(".sec2-slide9", { opacity: 0 }, "nine")
-  .to(".sec2-slide9", { opacity: 0 }, "nine-end");
+// // 9
+// tl2
+//   .from("#sec2-nav9 span", { opacity: 0 }, "nine")
+//   .to("#sec2-nav9 span", { opacity: 0 }, "nine-end")
+//   .to("#sec2-nav9 i", { backgroundColor: "#000", scale: 2 }, "nine")
+//   .to("#sec2-nav9 i", { backgroundColor: "#c4c4c4", scale: 1 }, "nine-end")
+//   .from(".sec2-slide9", { opacity: 0 }, "nine")
+//   .to(".sec2-slide9", { opacity: 0 }, "nine-end");
 
-// 10
-tl2
-  .from("#sec2-nav10 span", { opacity: 0 }, "ten")
-  .to("#sec2-nav10 span", { opacity: 0 }, "ten-end")
-  .to("#sec2-nav10 i", { backgroundColor: "#000", scale: 2 }, "ten")
-  .to("#sec2-nav10 i", { backgroundColor: "#c4c4c4", scale: 1 }, "ten-end")
-  .from(".sec2-slide10", { opacity: 0 }, "ten")
-  .to(".sec2-slide10", { opacity: 1 }, "ten-end");
+// // 10
+// tl2
+//   .from("#sec2-nav10 span", { opacity: 0 }, "ten")
+//   .to("#sec2-nav10 span", { opacity: 0 }, "ten-end")
+//   .to("#sec2-nav10 i", { backgroundColor: "#000", scale: 2 }, "ten")
+//   .to("#sec2-nav10 i", { backgroundColor: "#c4c4c4", scale: 1 }, "ten-end")
+//   .from(".sec2-slide10", { opacity: 0 }, "ten")
+//   .to(".sec2-slide10", { opacity: 1 }, "ten-end");
 
 // 11
 // tl2
@@ -240,7 +240,7 @@ tl2
 //   .to(".sec2-slide11", { opacity: 1 }, "eleven-end");
 
 var pinOnly2 = ScrollTrigger.create({
-  animation: tl2,
+  // animation: tl2,
   trigger: ".interective__invasion",
   pin: true,
   scrub: true,
