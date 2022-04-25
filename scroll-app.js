@@ -16,6 +16,20 @@ sections.forEach((section) => {
   });
 });
 
+// var charts = gsap.utils.toArray(".interactive__charts");
+// charts.forEach((section) => {
+//   gsap.from(section, {
+//     opacity: 0,
+//     scrollTrigger: {
+//       trigger: section,
+//       start: "top 75%",
+//       scrub: true,
+//       end: "bottom 25%",
+//       markers: false,
+//     },
+//   });
+// });
+
 // Timeline of Events ========================= //
 // ============================================ //
 

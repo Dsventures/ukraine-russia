@@ -82,8 +82,8 @@ p.interactive__main-desc {
 
 section.interective__timeline {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
 }
 
 .timeline__point {
@@ -111,7 +111,7 @@ section.interective__timeline {
 }
 
 .interective__invasion {
-    height: 100vh;
+    height: auto;
     position: relative;
 }
 
@@ -174,6 +174,10 @@ section.interective__timeline {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     transform: translateX(-50%);
+}
+
+.interective__citizen {
+    margin-bottom: 30px;
 }
 
 .invasion-map__slides {
