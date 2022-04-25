@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What’s happening in the Russia-Ukraine conflict?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: "Georama", sans-serif;
+      }
+
+      .swiper {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        text-align: center;
+      }
+
+      .swiper-pagination {
+        position: relative;
+        bottom: -36px !important;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: auto;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: start;
+        justify-content: start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .swiper-slide p {
+        width: 80%;
+      }
+      .swiper-slide .date-time {
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: red;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        /* height: 100%; */
+        object-fit: cover;
+      }
+
+      .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+      }
+
+      .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: #000;
+        transform: scale(1.3);
+      }
+
+      .sec1-years {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        align-items: end;
+        column-gap: 20px;
+        position: relative;
+        margin-bottom: 20px;
+        /* border-bottom: 2px solid #ccc; */
+        padding: 0;
+        margin-left: 124px;
+      }
+
+      .sec1-years::after {
+        content: "";
+        position: absolute;
+        width: 453%;
+        height: 0.1em;
+        background-color: black;
+        bottom: 0;
+        z-index: -1;
+        left: 0;
+      }
+
+      .sec1-years li {
+        flex-basis: 110px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        font-size: 12px;
+        position: relative;
+        height: 35px;
+      }
+
+      .sec1-years li.active {
+        font-size: 16px;
+        font-weight: bold;
+        color: red;
+      }
+
+      .sec1-years li::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: grey;
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        border-radius: 50%;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        top: 75vh;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav class="sec1-nav">
+        <ul class="sec1-years">
+          <li id="dec2021" class="time1years active">Dec2021</li>
+          <!--1-->
+          <li id="feb2022" class="time1years">Feb2022</li>
+          <!--2-->
+          <li id="feb22-2022" class="time1years">22 Feb 2022</li>
+          <!--3-->
+          <li id="feb24-2022" class="time1years">24 Feb 2022</li>
+          <!--4-->
+          <li id="feb26-2022" class="time1years">26 Feb 2022</li>
+          <!--5-->
+          <li id="mar02-2022" class="time1years">02 Mar 2022</li>
+          <!--6-->
+          <li id="mar26-2022" class="time1years">26 Mar 2022</li>
+          <!--7-->
+          <li id="mar31-2022" class="time1years">31 Mar 2022</li>
+          <!--8-->
+          <li id="apr02-2022" class="time1years">02 Apr 2022</li>
+          <!--9-->
+          <li id="apr03-2022" class="time1years">03 Apr 2022</li>
+          <!--10-->
+          <li id="apr04-2022" class="time1years">04 Apr 2022</li>
+          <!--11-->
+          <li id="apr10-2022" class="time1years">10 Apr 2022</li>
+          <!--12-->
+        </ul>
+      </nav>
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/toe/1.jpeg" class="timeline__img" alt="" />
+            <!-- <span>Dec 2021</span> -->
+            <p class="scroll-p">
+              The conflict begins silently as Russia starts deploying forces
+              near Ukraine borders
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/2.jpeg" class="timeline__img" alt="" />
+            <!-- <span>Feb 2022</span> -->
+            <p>
+              Ukrainian President Volodymir Zelensky takes firm stand against
+              Russia. Stays firm on joining NATO alliance despite Russia's
+              pressure to not do so
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/3.png" class="timeline__img" alt="" />
+            <!-- <span>22 Feb 2022</span> -->
+            <p>
+              Sanctions: USA and Europe declare sanctions against Russia
+              followed by their move to declare independence to the two
+              Ukrainian regions
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/4.jpeg" class="timeline__img" alt="" />
+            <!-- <span>24 Feb 2022</span> -->
+            <p>
+              Russian Invasion begins. The Putin army asks Ukraine to lay down
+              the arms and surrender but Ukraine begins retaliatory attack
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/5.jpeg" class="timeline__img" alt="" />
+            <!-- <span>26 Feb 2022</span> -->
+            <p>
+              "German Help: Germany sends 1000 anti-tank weapons and a few other
+              missiles to Ukraine. Ukraine defendes capital city Kyiv despite
+              continuous attack from the other side"
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/6.jpeg" class="timeline__img" alt="" />
+            <!-- <span>02 Mar 2022</span> -->
+            <p>
+              Russia invades Kharkiv. Kyiv and Kharkiv remain the centre of
+              attack from Russian side while Ukrainians strongly retaliate
+              giving weapons in commoner's hands Russian forces cut off Kharkiv
+              supplies and surround it with attack
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/7.jpeg" class="timeline__img" alt="" />
+            <!-- <span>26 Mar 2022</span> -->
+            <p>
+              "Russian attack intensifies: Shelling continues in Kyiv by the
+              Russian army however, no soldiers have entered inside the city
+              claims Ukraine. Saying that the checkposts have been deployed all
+              around city Ukraine also claims that enemies have attacked Kharkiv
+              nuclear facility"
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/8.jpeg" class="timeline__img" alt="" />
+            <!-- <span>31 Mar 2022</span> -->
+            <p>
+              Russia intensifies air attacks on Kyiv and other adjacent regions.
+              Meanwhile Ukrain claims that the enemy forces have withdrawn from
+              nuclear plants and also some of the it declared reclaiming of some
+              of the regions that had been taken over by enemy army
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/9.jpeg" class="timeline__img" alt="" />
+            <!-- <span>02 Apr 2022</span> -->
+            <p>
+              Two other cities - Poltava and Kremenchuk - attacked by Russian
+              forces. Meanwhile, Ukraine claims that Russian forces have
+              retreated from Kyiv to the eastern borders of Ukraine
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/10.jpeg" class="timeline__img" alt="" />
+            <!-- <span>03 Apr 2022</span> -->
+            <p>
+              Bucha Massacre revealed to the world as over 280 bodies are found
+              under mass grave. Human Rights Watch reports war crimes.
+            </p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/11.jpeg" class="timeline__img" alt="" />
+            <!-- <span>04 Apr 2022</span> -->
+            <p>President Zelensky addresses United Nations Security Council.</p>
+          </div>
+          <!--.swiper-slide-->
+          <div class="swiper-slide">
+            <img src="img/toe/12.jpeg" class="timeline__img" alt="" />
+            <!-- <span>Apr 2022</span> -->
+            <p>
+              "Biden calls Russia's war on Ukraine a 'Genocide'. Russian defence
+              minstry publishes the footage of attacks by Ka-52 helicopters in
+              Ukrainian region. "
+            </p>
+          </div>
+          <!--.swiper-slide-->
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <small>Source : Institute for the study of war</small>
+      </div>
+      <!--.mySwiper1-->
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSRulePlugin.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="scroll-app.js"></script> -->
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      swiper.on("slideChange", function (e) {
+        var sections = gsap.utils.toArray(".time1years");
+
+        console.log(sections, "sections");
+
+        if (swiper.swipeDirection === "next") {
+          var allvals = document.getElementsByClassName("time1years");
+          for (var i = 0; i < allvals.length; i++) {
+            allvals[i].classList.remove("active");
+          }
+          var selItem = document.getElementById(
+            sections[swiper.activeIndex].id
+          );
+          selItem.classList.add("active");
+          var tl = gsap.timeline().to(".sec1-years", {
+            x: "-" + (swiper.activeIndex * 100 + 24) + "px",
+          });
+        } else if (swiper.swipeDirection === "prev") {
+          var allvals2 = document.getElementsByClassName("time1years");
+          for (var j = 0; j < allvals2.length; j++) {
+            allvals2[j].classList.remove("active");
+          }
+          var selItem2 = document.getElementById(
+            sections[swiper.activeIndex].id
+          );
+          selItem2.classList.add("active");
+          console.log(swiper.activeIndex * 100 + 24 + "px");
+          var tl2 = gsap.timeline().to(".sec1-years", {
+            x: "-" + (swiper.activeIndex * 100 + 24) + "px",
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
