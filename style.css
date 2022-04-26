@@ -19,9 +19,14 @@
     margin: 0 0 15px 0;
 }
 
-.interactive__main-img,
+
 .tv9-interactives img {
     width: 100%;
+    margin: 0 auto;
+}
+
+img.interactive__main-img {
+    width: 80%;
     margin: 0 auto;
 }
 
