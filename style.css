@@ -435,7 +435,12 @@ section.interective__timeline {
     font-weight: bold;
 }
 
-
+.desktop-ver{
+    display: none;
+}
+.mobile-ver {
+    display: block;
+}
 
 
 
@@ -449,6 +454,12 @@ section.interective__timeline {
 }
 
 @media (min-width: 1024px) {
+    .desktop-ver {
+        display: block;
+    }
+    .mobile-ver {
+        display: none;
+    }
     .tv9-interactives {
         width: 100%;
         max-width: 450px;
