@@ -354,9 +354,19 @@
           );
           selItem2.classList.add("active");
           console.log(swiper.activeIndex * 100 + 24 + "px");
-          var tl2 = gsap.timeline().to(".sec1-years", {
-            x: "-" + (swiper.activeIndex * 100 + 24) + "px",
-          });
+          if (swiper.activeIndex >= 0 && swiper.activeIndex < 5) {
+            var tl2 = gsap.timeline().to(".sec1-years", {
+              x: "-" + (swiper.activeIndex * 100 + 24) + "px",
+            });
+          } else if (swiper.activeIndex >= 5 && swiper.activeIndex < 9) {
+            var tl2 = gsap.timeline().to(".sec1-years", {
+              x: "-" + swiper.activeIndex * 115 + "px",
+            });
+          } else if (swiper.activeIndex >= 9) {
+            var tl2 = gsap.timeline().to(".sec1-years", {
+              x: "-" + swiper.activeIndex * 120 + "px",
+            });
+          }
         }
       });
     </script>

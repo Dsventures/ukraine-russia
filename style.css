@@ -8,10 +8,15 @@
     font-family: 'Georama',
         sans-serif;
 }
+.tv9-interactives > section {
+    margin-bottom: 50px;padding: 0 10px;
+}
 
 .interactive__main-title {
     font-size: 28px;
     font-weight: 700;
+    line-height: 32px;
+    margin: 0 0 15px 0;
 }
 
 .interactive__main-img,
