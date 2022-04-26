@@ -2,6 +2,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Animate all p tags
 
+// var touchIframes = document.getElementsByClassName("iframeTouch");
+// var gestureGIF = document.getElementsByClassName("gesture")[0];
+
+// for (var t = 0; t < touchIframes.length; t++) {
+//   touchIframes[t].onclick = function () {
+//     // gestureGIF.style.display = "none";
+//     alert("Test");
+//   };
+// }
+
 var sections = gsap.utils.toArray(".scroll-p");
 sections.forEach((section) => {
   gsap.from(section, {
