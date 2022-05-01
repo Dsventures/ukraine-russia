@@ -507,7 +507,7 @@
                   Ustyluh
                 </text>
                 <text
-                  class="ustyluh"
+                  class="city ustyluh"
                   transform="matrix(1 0 0 1 140.2949 139.1627)"
                 >
                   <tspan x="0" y="0" class="st6 st0 st3">470km</tspan>
@@ -1021,21 +1021,39 @@
       //   },
       //   "zero"
       // );
-      tl5.to(
-        "#humanCorridors",
-        {
+      tl5
+        .to(
+          "#humanCorridors",
+          {
+            backgroundColor: "#000",
+            scale: 1,
+          },
+          "zero"
+        )
+        .to("#humanCorridors", {
           backgroundColor: "#000",
-          scale: 1,
-        },
-        "zero"
-      );
+          scale: 1.5,
+          x: "100px",
+          y: "100px",
+        })
+        .to("#humanCorridors", {
+          backgroundColor: "#000",
+          scale: 2,
+          x: "150px",
+          y: "200px",
+        })
+        .to("#humanCorridors", {
+          backgroundColor: "#000",
+          scale: 2.5,
+          x: "200px",
+          y: "300px",
+        });
 
       tl5.to("#humanCorridors", {
         backgroundColor: "#000",
         scale: 3,
         x: "250px",
         y: "400px",
-        delay: 5,
       });
 
       // 1st cluster of cities
@@ -1283,9 +1301,9 @@
         "#humanCorridors",
         {
           backgroundColor: "#000",
-          scale: 2.5,
-          x: "-300px",
-          y: "-260px",
+          scale: 3,
+          x: "-400px",
+          y: "-400px",
         },
         "fortyseven"
       );
@@ -1321,12 +1339,44 @@
         .to("#Layer_40", { scale: 1 }, "fiftyfour-end");
 
       // zoom out of Scene: The End
-      tl5.to("#humanCorridors", {
-        backgroundColor: "#000",
-        scale: 1,
-        x: "0px",
-        y: "0px",
-      });
+      tl5
+        .to("#humanCorridors", {
+          backgroundColor: "#000",
+          scale: 3,
+          x: "-300px",
+          y: "-260px",
+          delay: 10,
+        })
+        .to("#humanCorridors", {
+          backgroundColor: "#000",
+          scale: 3,
+          x: "-300px",
+          y: "-260px",
+        })
+        .to("#humanCorridors", {
+          backgroundColor: "#000",
+          scale: 2.5,
+          x: "-200px",
+          y: "-200px",
+        })
+        .to("#humanCorridors", {
+          backgroundColor: "#000",
+          scale: 2,
+          x: "-100px",
+          y: "-150px",
+        })
+        .to("#humanCorridors", {
+          backgroundColor: "#000",
+          scale: 1.5,
+          x: "-50px",
+          y: "-100px",
+        })
+        .to("#humanCorridors", {
+          backgroundColor: "#000",
+          scale: 1,
+          x: "0px",
+          y: "0px",
+        });
 
       var pinOnly5 = ScrollTrigger.create({
         animation: tl5,
