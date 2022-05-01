@@ -167,6 +167,11 @@
               .st6 {
                 fill: #00a7bd;
               }
+              .Chelm,
+              .Kovel,
+              .ustyluh {
+                opacity: 0;
+              }
             </style>
             <g id="Layer_1">
               <image
@@ -475,16 +480,19 @@
             </g>
             <g id="Layer_4"></g>
             <g id="Layer_3">
-              <circle cx="141.7" cy="129.8" r="1.4" />
+              <circle class="ustyluh" cx="141.7" cy="129.8" r="1.4" />
               <circle cx="119.6" cy="139.2" r="1.4" />
               <circle cx="94.9" cy="150.7" r="1.4" />
               <text
                 transform="matrix(1 0 0 1 129.7975 123.5885)"
-                class="st2 st3"
+                class="st2 st3 ustyluh"
               >
                 Ustyluh
               </text>
-              <text transform="matrix(1 0 0 1 140.2949 139.1627)">
+              <text
+                class="ustyluh"
+                transform="matrix(1 0 0 1 140.2949 139.1627)"
+              >
                 <tspan x="0" y="0" class="st6 st0 st3">470km</tspan>
                 <tspan x="0" y="6.6" class="st6 st0 st3">to Kyiv</tspan>
               </text>
@@ -502,16 +510,16 @@
               </text>
             </g>
             <g id="Layer_2">
-              <circle cx="89.6" cy="109.6" r="1.4" />
+              <circle cx="89.6" cy="109.6" r="1.4" class="Chelm" />
               <text
                 transform="matrix(1 0 0 1 72.3093 106.8443)"
-                class="st2 st3"
+                class="st2 st3 Chelm"
               >
                 Chelm
               </text>
               <text
                 transform="matrix(1 0 0 1 159.3788 99.3095)"
-                class="st2 st3"
+                class="st2 st3 Kovel"
               >
                 Kovel
               </text>
@@ -993,6 +1001,20 @@
         x: "250px",
         y: "250px",
       });
+
+      tl5.to(".Chelm", { opacity: 1 }, "one");
+      tl5.to(".Kovel", { opacity: 1 }, "one-2");
+      tl5
+        .to("#Layer_15", { scale: 1.5 }, "two")
+        .to("#Layer_15 circle", { fill: "#ff0000" }, "two")
+        .to("#Layer_15", { scale: 1 }, "two-end");
+
+      tl5.to(".ustyluh", { opacity: 1 }, "three");
+
+      tl5
+        .to("#Layer_16", { scale: 1.5 }, "four")
+        .to("#Layer_16 circle", { fill: "#ff0000" }, "four")
+        .to("#Layer_16", { scale: 1 }, "four-end");
 
       // zoom out of Scene
       tl5.to("#humanCorridors", {
