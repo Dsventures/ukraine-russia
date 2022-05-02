@@ -699,13 +699,13 @@ sections.forEach((section) => {
 var tl5 = gsap.timeline();
 // zoom into Scene
 
-tl5.to(
-  "#humanitarian-corridor",
-  {
-    padding: "100px 0",
-  },
-  "zero"
-);
+// tl5.to(
+//   "#humanitarian-corridor",
+//   {
+//     margin: "100px 0 0 0",
+//   },
+//   "zero"
+// );
 tl5
   .to(
     "#humanCorridors",
@@ -1068,6 +1068,14 @@ tl5
     x: "0px",
     y: "0px",
   });
+
+// tl5.to(
+//   "#humanitarian-corridor",
+//   {
+//     margin: "0 0 0 0",
+//   },
+//   "zero"
+// );
 
 var pinOnly5 = ScrollTrigger.create({
   animation: tl5,
