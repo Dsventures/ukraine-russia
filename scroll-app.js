@@ -1082,7 +1082,7 @@ var pinOnly5 = ScrollTrigger.create({
   trigger: "#humanitarian-corridor",
   pin: true,
   scrub: true,
-  start: "top 50px",
+  start: "top 100px",
   end: "+=600%",
   pinSpacing: true,
   toggleClass: { targets: "#humanitarian-corridor", className: "is-active" },
