@@ -696,154 +696,385 @@ sections.forEach((section) => {
 //   pinSpacing: true,
 // });
 
-// var tl5 = gsap.timeline();
+var tl5 = gsap.timeline();
+// zoom into Scene
 
-// // 1
-// tl5
-//   .from(".swiper-slide1", { opacity: 1 }, "one")
-//   .to(".sec6Page1", { backgroundColor: "#000", scale: 2 }, "one")
-//   .to(".sec6Page1", { backgroundColor: "#c4c4c4", scale: 1 }, "one-end")
-//   .to(".swiper-slide1", { opacity: 0 }, "one-end");
+// tl5.to(
+//   "#humanitarian-corridor",
+//   {
+//     padding: "30px 0",
+//   },
+//   "zero"
+// );
+tl5
+  .to(
+    "#humanCorridors",
+    {
+      backgroundColor: "#000",
+      scale: 1,
+    },
+    "zero"
+  )
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 1.5,
+    x: "100px",
+    y: "100px",
+  })
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 2,
+    x: "150px",
+    y: "200px",
+  })
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 2.5,
+    x: "200px",
+    y: "300px",
+  });
 
-// // 2
-// tl5
-//   .from(".swiper-slide2", { opacity: 0 }, "two")
-//   .to(".sec6Page2", { backgroundColor: "#000", scale: 2 }, "two")
-//   .to(".sec6Page2", { backgroundColor: "#c4c4c4", scale: 1 }, "two-end")
-//   .to(".swiper-slide2", { opacity: 0 }, "two-end");
+tl5.to("#humanCorridors", {
+  backgroundColor: "#000",
+  scale: 3,
+  x: "250px",
+  y: "400px",
+});
 
-// // 3
-// tl5
-//   .from(".swiper-slide3", { opacity: 0 }, "three")
-//   .to(".sec6Page3", { backgroundColor: "#000", scale: 2 }, "three")
-//   .to(".sec6Page3", { backgroundColor: "#c4c4c4", scale: 1 }, "three-end")
-//   .to(".swiper-slide3", { opacity: 0 }, "three-end");
+// 1st cluster of cities
+// chelm / kovel / ustyluh / hrubieszow / lubycza
+tl5.to(".chelm", { opacity: 1 }, "one");
+tl5.to(".kovel", { opacity: 1 }, "two");
+tl5.to(".ustyluh", { opacity: 1 }, "three");
+tl5.to(".hrubieszow", { opacity: 1 }, "four");
+tl5.to(".lubycza", { opacity: 1 }, "five");
 
-// // 4
-// tl5
-//   .from(".swiper-slide4", { opacity: 0 }, "four")
-//   .to(".sec6Page4", { backgroundColor: "#000", scale: 2 }, "four")
-//   .to(".sec6Page4", { backgroundColor: "#c4c4c4", scale: 1 }, "four-end")
-//   .to(".swiper-slide4", { opacity: 0 }, "four-end");
+tl5
+  .from("#Layer_15", { opacity: 0, scale: 1 }, "six-0")
+  .to("#Layer_15", { scale: 1.5 }, "six")
+  .to("#Layer_15 circle", { fill: "#ff0000" }, "six")
+  .to("#Layer_15", { scale: 1 }, "six-end")
+  .to("#Layer_15 circle", { fill: "#ff7246" }, "six-end");
 
-// // 5
-// tl5
-//   .from(".swiper-slide5", { opacity: 0 }, "five")
-//   .to(".sec6Page5", { backgroundColor: "#000", scale: 2 }, "five")
-//   .to(".sec6Page5", { backgroundColor: "#c4c4c4", scale: 1 }, "five-end")
-//   .to(".swiper-slide5", { opacity: 0 }, "five-end");
+tl5
+  .from("#Layer_16", { opacity: 0, scale: 1 }, "seven-0")
+  .to("#Layer_16", { scale: 1.5 }, "seven")
+  .to("#Layer_16 circle", { fill: "#ff0000" }, "seven")
+  .to("#Layer_16", { scale: 1 }, "seven-end");
 
-// // 6
-// tl5
-//   .from(".swiper-slide6", { opacity: 0 }, "six")
-//   .to(".sec6Page6", { backgroundColor: "#000", scale: 2 }, "six")
-//   .to(".sec6Page6", { backgroundColor: "#c4c4c4", scale: 1 }, "six-end")
-//   .to(".swiper-slide6", { opacity: 0 }, "six-end");
+tl5
+  .from("#Layer_17", { opacity: 0, scale: 1 }, "eight-0")
+  .to("#Layer_17", { scale: 1.5 }, "eight")
+  .to("#Layer_17 circle", { fill: "#ff0000" }, "eight")
+  .to("#Layer_17", { scale: 1 }, "eight-end");
 
-// // 7
-// tl5
-//   .from(".swiper-slide7", { opacity: 0 }, "seven")
-//   .to(".sec6Page7", { backgroundColor: "#000", scale: 2 }, "seven")
-//   .to(".sec6Page7", { backgroundColor: "#c4c4c4", scale: 1 }, "seven-end")
-//   .to(".swiper-slide7", { opacity: 0 }, "seven-end");
+// zoom into Scene
+tl5.to(
+  "#humanCorridors",
+  {
+    backgroundColor: "#000",
+    scale: 3,
+    x: "300px",
+    y: "250px",
+  },
+  "nine"
+);
 
-// // 8
-// tl5
-//   .from(".swiper-slide8", { opacity: 0 }, "eight")
-//   .to(".sec6Page8", { backgroundColor: "#000", scale: 2 }, "eight")
-//   .to(".sec6Page8", { backgroundColor: "#c4c4c4", scale: 1 }, "eight-end")
-//   .to(".swiper-slide8", { opacity: 0 }, "eight-end");
+// lubaczow / rava / radymno / krakovets
+tl5.to(".lubaczow", { opacity: 1 }, "nine");
+tl5.to(".rava", { opacity: 1 }, "ten");
+tl5.to(".radymno", { opacity: 1 }, "eleven");
+tl5.to(".krakovets", { opacity: 1 }, "twelve");
 
-// // 9
-// tl5
-//   .from(".swiper-slide9", { opacity: 0 }, "nine")
-//   .to(".sec6Page9", { backgroundColor: "#000", scale: 2 }, "nine")
-//   .to(".sec6Page9", { backgroundColor: "#c4c4c4", scale: 1 }, "nine-end")
-//   .to(".swiper-slide9", { opacity: 0 }, "nine-end");
+tl5
+  .from("#Layer_18", { opacity: 0, scale: 1 }, "thirteen-0")
+  .to("#Layer_18", { scale: 1.5 }, "thirteen")
+  .to("#Layer_18 circle", { fill: "#ff0000" }, "thirteen")
+  .to("#Layer_18", { scale: 1 }, "thirteen-end")
+  .to("#Layer_18 circle", { fill: "#ff7246" }, "thirteen-end");
 
-// // 10
-// tl5
-//   .from(".swiper-slide10", { opacity: 0 }, "ten")
-//   .to(".sec6Page10", { backgroundColor: "#000", scale: 2 }, "ten")
-//   .to(".sec6Page10", { backgroundColor: "#c4c4c4", scale: 1 }, "ten-end")
-//   .to(".swiper-slide10", { opacity: 0 }, "ten-end");
+tl5
+  .from("#Layer_19", { opacity: 0, scale: 1 }, "fourteen-0")
+  .to("#Layer_19", { scale: 1.5 }, "fourteen")
+  .to("#Layer_19 circle", { fill: "#ff0000" }, "fourteen")
+  .to("#Layer_19", { scale: 1 }, "fourteen-end");
 
-// // 11
-// tl5
-//   .from(".swiper-slide11", { opacity: 0 }, "eleven")
-//   .to(".sec6Page11", { backgroundColor: "#000", scale: 2 }, "eleven")
-//   .to(".sec6Page11", { backgroundColor: "#c4c4c4", scale: 1 }, "eleven-end")
-//   .to(".swiper-slide11", { opacity: 0 }, "eleven-end");
+tl5
+  .from("#Layer_20", { opacity: 0, scale: 1 }, "fifteen-0")
+  .to("#Layer_20", { scale: 1.5 }, "fifteen")
+  .to("#Layer_20 circle", { fill: "#ff0000" }, "fifteen")
+  .to("#Layer_20", { scale: 1 }, "fifteen-end");
 
-// // 12
-// tl5
-//   .from(".swiper-slide12", { opacity: 0 }, "twelve")
-//   .to(".sec6Page12", { backgroundColor: "#000", scale: 2 }, "twelve")
-//   .to(".sec6Page12", { backgroundColor: "#c4c4c4", scale: 1 }, "twelve-end")
-//   .to(".swiper-slide12", { opacity: 0 }, "twelve-end");
+// zoom into Scene
+tl5.to(
+  "#humanCorridors",
+  {
+    backgroundColor: "#000",
+    scale: 3,
+    x: "350px",
+    y: "250px",
+  },
+  "sixteen"
+);
 
-// // 13
-// tl5
-//   .from(".swiper-slide13", { opacity: 0 }, "thirteen")
-//   .to(".sec6Page13", { backgroundColor: "#000", scale: 2 }, "thirteen")
-//   .to(".sec6Page13", { backgroundColor: "#c4c4c4", scale: 1 }, "thirteen-end")
-//   .to(".swiper-slide13", { opacity: 0 }, "thirteen-end");
+// przemsyl / mostyska / dolne / staryava
+tl5.to(".przemsyl", { opacity: 1 }, "sixteen");
+tl5.to(".mostyska", { opacity: 1 }, "seventeen");
+tl5.to(".dolne", { opacity: 1 }, "eighteen");
+tl5.to(".staryava", { opacity: 1 }, "nineteen");
 
-// // 14
-// tl5
-//   .from(".swiper-slide14", { opacity: 0 }, "fourteen")
-//   .to(".sec6Page14", { backgroundColor: "#000", scale: 2 }, "fourteen")
-//   .to(".sec6Page14", { backgroundColor: "#c4c4c4", scale: 1 }, "fourteen-end")
-//   .to(".swiper-slide14", { opacity: 0 }, "fourteen-end");
+tl5
+  .from("#Layer_21", { opacity: 0, scale: 1 }, "twenty-0")
+  .to("#Layer_21", { scale: 1.5 }, "twenty")
+  .to("#Layer_21 circle", { fill: "#ff0000" }, "twenty")
+  .to("#Layer_21", { scale: 1 }, "twenty-end")
+  .to("#Layer_21 circle", { fill: "#ff7246" }, "twenty-end");
 
-// // 15
-// tl5
-//   .from(".swiper-slide15", { opacity: 0 }, "fifteen")
-//   .to(".sec6Page15", { backgroundColor: "#000", scale: 2 }, "fifteen")
-//   .to(".sec6Page15", { backgroundColor: "#c4c4c4", scale: 1 }, "fifteen-end")
-//   .to(".swiper-slide15", { opacity: 0 }, "fifteen-end");
+tl5
+  .from("#Layer_22", { opacity: 0, scale: 1 }, "twentytone-0")
+  .to("#Layer_22", { scale: 1.5 }, "twentytone")
+  .to("#Layer_22 circle", { fill: "#ff0000" }, "twentytone")
+  .to("#Layer_22", { scale: 1 }, "twentytone-end");
 
-// // 16
-// tl5
-//   .from(".swiper-slide16", { opacity: 0 }, "sixteen")
-//   .to(".sec6Page16", { backgroundColor: "#000", scale: 2 }, "sixteen")
-//   .to(".sec6Page16", { backgroundColor: "#c4c4c4", scale: 1 }, "sixteen-end")
-//   .to(".swiper-slide16", { opacity: 0 }, "sixteen-end");
+// zoom into Scene
+tl5.to(
+  "#humanCorridors",
+  {
+    backgroundColor: "#000",
+    scale: 3,
+    x: "370px",
+    y: "60px",
+  },
+  "twentytwo"
+);
 
-// // 17
-// tl5
-//   .from(".swiper-slide17", { opacity: 0 }, "seventeen")
-//   .to(".sec6Page17", { backgroundColor: "#000", scale: 2 }, "seventeen")
-//   .to(".sec6Page17", { backgroundColor: "#c4c4c4", scale: 1 }, "seventeen-end")
-//   .to(".swiper-slide17", { opacity: 0 }, "seventeen-end");
+// snina / bereznyi / sobrance / uzhhorod
+tl5.to(".snina", { opacity: 1 }, "twentytwo");
+tl5.to(".bereznyi", { opacity: 1 }, "twentythree");
+tl5.to(".sobrance", { opacity: 1 }, "twentyfour");
+tl5.to(".uzhhorod", { opacity: 1 }, "twentyfive");
 
-// // 18
-// tl5
-//   .from(".swiper-slide18", { opacity: 0 }, "eighteen")
-//   .to(".sec6Page18", { backgroundColor: "#000", scale: 2 }, "eighteen")
-//   .to(".sec6Page18", { backgroundColor: "#c4c4c4", scale: 1 }, "eighteen-end")
-//   .to(".swiper-slide18", { opacity: 0 }, "eighteen-end");
+tl5
+  .from("#Layer_23", { opacity: 0, scale: 1 }, "twentysix-0")
+  .to("#Layer_23", { scale: 1.5 }, "twentysix")
+  .to("#Layer_23 circle", { fill: "#ff0000" }, "twentysix")
+  .to("#Layer_23", { scale: 1 }, "twentysix-end");
 
-// // 19
-// tl5
-//   .from(".swiper-slide19", { opacity: 0 }, "nineteen")
-//   .to(".sec6Page19", { backgroundColor: "#000", scale: 2 }, "nineteen")
-//   .to(".sec6Page19", { backgroundColor: "#c4c4c4", scale: 1 }, "nineteen-end")
-//   .to(".swiper-slide19", { opacity: 0 }, "nineteen-end");
+tl5
+  .from("#Layer_24", { opacity: 0, scale: 1 }, "twentyseven-0")
+  .to("#Layer_24", { scale: 1.5 }, "twentyseven")
+  .to("#Layer_24 circle", { fill: "#ff0000" }, "twentyseven")
+  .to("#Layer_24", { scale: 1 }, "twentyseven-end");
 
-// // 20
-// tl5
-//   .from(".swiper-slide20", { opacity: 0 }, "twenty")
-//   .to(".sec6Page20", { backgroundColor: "#000", scale: 2 }, "twenty")
-//   .to(".sec6Page20", { backgroundColor: "#c4c4c4", scale: 1 }, "twenty-end")
-//   .to(".swiper-slide20", { opacity: 1 }, "twenty-end");
+// chop / zahony / berehove / vylok / halmeu
+tl5.to(".chop", { opacity: 1 }, "twentyeight");
+tl5.to(".zahony", { opacity: 1 }, "twentynine");
+tl5.to(".berehove", { opacity: 1 }, "thirty");
+tl5.to(".vylok", { opacity: 1 }, "thirtyone");
+tl5.to(".halmeu", { opacity: 1 }, "thirtytwo");
 
-// var pinOnly5 = ScrollTrigger.create({
-//   animation: tl5,
-//   trigger: ".interactive_photogallery",
-//   pin: true,
-//   scrub: true,
-//   start: "top top",
-//   end: "+=600%",
-//   pinSpacing: true,
-// });
+tl5
+  .from("#Layer_25", { opacity: 0, scale: 1 }, "thirtythree-0")
+  .to("#Layer_25", { scale: 1.5 }, "thirtythree")
+  .to("#Layer_25 circle", { fill: "#ff0000" }, "thirtythree")
+  .to("#Layer_25", { scale: 1 }, "thirtythree-end");
+
+tl5
+  .from("#Layer_26", { opacity: 0, scale: 1 }, "thirtyfour-0")
+  .to("#Layer_26", { scale: 1.5 }, "thirtyfour")
+  .to("#Layer_26 circle", { fill: "#ff0000" }, "thirtyfour")
+  .to("#Layer_26", { scale: 1 }, "thirtyfour-end");
+
+tl5
+  .from("#Layer_27", { opacity: 0, scale: 1 }, "thirtyfive-0")
+  .to("#Layer_27", { scale: 1.5 }, "thirtyfive")
+  .to("#Layer_27 circle", { fill: "#ff0000" }, "thirtyfive")
+  .to("#Layer_27", { scale: 1 }, "thirtyfive-end");
+
+tl5
+  .from("#Layer_28", { opacity: 0, scale: 1 }, "thirtysix-0")
+  .to("#Layer_28", { scale: 1.5 }, "thirtysix")
+  .to("#Layer_28 circle", { fill: "#ff0000" }, "thirtysix")
+  .to("#Layer_28", { scale: 1 }, "thirtysix-end");
+
+tl5
+  .from("#Layer_29", { opacity: 0, scale: 1 }, "thirtyseven-0")
+  .to("#Layer_29", { scale: 1.5 }, "thirtyseven")
+  .to("#Layer_29 circle", { fill: "#ff0000" }, "thirtyseven")
+  .to("#Layer_29", { scale: 1 }, "thirtyseven-end");
+
+tl5
+  .from("#Layer_30", { opacity: 0, scale: 1 }, "thirtyeight-0")
+  .to("#Layer_30", { scale: 1.5 }, "thirtyeight")
+  .to("#Layer_30 circle", { fill: "#ff0000" }, "thirtyeight")
+  .to("#Layer_30", { scale: 1 }, "thirtyeight-end");
+
+// zoom into Scene
+tl5.to(
+  "#humanCorridors",
+  {
+    backgroundColor: "#000",
+    scale: 2.5,
+    x: "300px",
+    y: "60px",
+  },
+  "thirtynine"
+);
+
+//sighetu
+tl5.to(".sighetu", { opacity: 1 }, "thirtynine");
+
+tl5
+  .from("#Layer_31", { opacity: 0, scale: 1 }, "forty-0")
+  .to("#Layer_31", { scale: 1.5 }, "forty")
+  .to("#Layer_31 circle", { fill: "#ff0000" }, "forty")
+  .to("#Layer_31", { scale: 1 }, "forty-end");
+
+// zoom into Scene
+tl5.to(
+  "#humanCorridors",
+  {
+    backgroundColor: "#000",
+    scale: 2.5,
+    x: "-150px",
+    y: "60px",
+  },
+  "fortyone"
+);
+
+// siret
+tl5.to(".siret", { opacity: 1 }, "fortyone");
+
+tl5
+  .from("#Layer_32", { opacity: 0, scale: 1 }, "fortytwo-0")
+  .to("#Layer_32", { scale: 1.5 }, "fortytwo")
+  .to("#Layer_32 circle", { fill: "#ff0000" }, "fortytwo")
+  .to("#Layer_32", { scale: 1 }, "fortytwo-end");
+
+// lipcani / sokyryany / Ocnita / mohyliv
+tl5.to(".lipcani", { opacity: 1 }, "fortythree");
+tl5.to(".sokyryany", { opacity: 1 }, "fortyfour");
+tl5.to(".ocnita", { opacity: 1 }, "fortyfive");
+tl5.to(".mohyliv", { opacity: 1 }, "fortysix");
+
+tl5
+  .from("#Layer_33", { opacity: 0, scale: 1 }, "fortythree-0")
+  .to("#Layer_33", { scale: 1.5 }, "fortythree")
+  .to("#Layer_33 circle", { fill: "#ff0000" }, "fortythree")
+  .to("#Layer_33", { scale: 1 }, "fortythree-end");
+
+tl5
+  .from("#Layer_34", { opacity: 0, scale: 1 }, "fortyfour-0")
+  .to("#Layer_34", { scale: 1.5 }, "fortyfour")
+  .to("#Layer_34 circle", { fill: "#ff0000" }, "fortyfour")
+  .to("#Layer_34", { scale: 1 }, "fortyfour-end");
+
+tl5
+  .from("#Layer_35", { opacity: 0, scale: 1 }, "fortyfive-0")
+  .to("#Layer_35", { scale: 1.5 }, "fortyfive")
+  .to("#Layer_35 circle", { fill: "#ff0000" }, "fortyfive")
+  .to("#Layer_35", { scale: 1 }, "fortyfive-end");
+
+tl5
+  .from("#Layer_36", { opacity: 0, scale: 1 }, "fortysix-0")
+  .to("#Layer_36", { scale: 1.5 }, "fortysix")
+  .to("#Layer_36 circle", { fill: "#ff0000" }, "fortysix")
+  .to("#Layer_36", { scale: 1 }, "fortysix-end");
+
+// zoom into Scene
+tl5.to(
+  "#humanCorridors",
+  {
+    backgroundColor: "#000",
+    scale: 3,
+    x: "-400px",
+    y: "-400px",
+  },
+  "fortyseven"
+);
+
+// kuchurhan / palanca / serpneve / vulcanesti
+tl5.to(".kuchurhan", { opacity: 1 }, "fortyseven");
+tl5.to(".palanca", { opacity: 1 }, "fortyeight");
+tl5.to(".serpneve", { opacity: 1 }, "fortynine");
+tl5.to(".vulcanesti", { opacity: 1 }, "fifty");
+
+tl5
+  .from("#Layer_37", { opacity: 0, scale: 1 }, "fiftyone-0")
+  .to("#Layer_37", { scale: 1.5 }, "fiftyone")
+  .to("#Layer_37 circle", { fill: "#ff0000" }, "fiftyone")
+  .to("#Layer_37", { scale: 1 }, "fiftyone-end");
+
+tl5
+  .from("#Layer_38", { opacity: 0, scale: 1 }, "fiftytwo-0")
+  .to("#Layer_38", { scale: 1.5 }, "fiftytwo")
+  .to("#Layer_38 circle", { fill: "#ff0000" }, "fiftytwo")
+  .to("#Layer_38", { scale: 1 }, "fiftytwo-end");
+
+tl5
+  .from("#Layer_39", { opacity: 0, scale: 1 }, "fiftythree-0")
+  .to("#Layer_39", { scale: 1.5 }, "fiftythree")
+  .to("#Layer_39 circle", { fill: "#ff0000" }, "fiftythree")
+  .to("#Layer_39", { scale: 1 }, "fiftythree-end");
+
+tl5
+  .from("#Layer_40", { opacity: 0, scale: 1 }, "fiftyfour-0")
+  .to("#Layer_40", { scale: 1.5 }, "fiftyfour")
+  .to("#Layer_40 circle", { fill: "#ff0000" }, "fiftyfour")
+  .to("#Layer_40", { scale: 1 }, "fiftyfour-end");
+
+// zoom out of Scene: The End
+tl5
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 3,
+    x: "-300px",
+    y: "-260px",
+    delay: 10,
+  })
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 2.75,
+    x: "-250px",
+    y: "-200px",
+  })
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 2.5,
+    x: "-200px",
+    y: "-150px",
+  })
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 2.25,
+    x: "-150px",
+    y: "-100px",
+  })
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 2,
+    x: "-100px",
+    y: "-50px",
+  })
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 1.5,
+    x: "-50px",
+    y: "-25px",
+  })
+  .to("#humanCorridors", {
+    backgroundColor: "#000",
+    scale: 1,
+    x: "0px",
+    y: "0px",
+  });
+
+var pinOnly5 = ScrollTrigger.create({
+  animation: tl5,
+  trigger: "#humanitarian-corridor",
+  pin: true,
+  scrub: true,
+  start: "top top",
+  end: "+=600%",
+  pinSpacing: true,
+});
