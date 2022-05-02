@@ -760,13 +760,15 @@ tl5
   .from("#Layer_16", { opacity: 0, scale: 1 }, "seven-0")
   .to("#Layer_16", { scale: 1.5 }, "seven")
   .to("#Layer_16 circle", { fill: "#ff0000" }, "seven")
-  .to("#Layer_16", { scale: 1 }, "seven-end");
+  .to("#Layer_16", { scale: 1 }, "seven-end")
+  .to("#Layer_16 circle", { fill: "#ff7246" }, "seven-end");
 
 tl5
   .from("#Layer_17", { opacity: 0, scale: 1 }, "eight-0")
   .to("#Layer_17", { scale: 1.5 }, "eight")
   .to("#Layer_17 circle", { fill: "#ff0000" }, "eight")
-  .to("#Layer_17", { scale: 1 }, "eight-end");
+  .to("#Layer_17", { scale: 1 }, "eight-end")
+  .to("#Layer_17 circle", { fill: "#ff7246" }, "eight-end");
 
 // zoom into Scene
 tl5.to(
@@ -797,13 +799,15 @@ tl5
   .from("#Layer_19", { opacity: 0, scale: 1 }, "fourteen-0")
   .to("#Layer_19", { scale: 1.5 }, "fourteen")
   .to("#Layer_19 circle", { fill: "#ff0000" }, "fourteen")
-  .to("#Layer_19", { scale: 1 }, "fourteen-end");
+  .to("#Layer_19", { scale: 1 }, "fourteen-end")
+  .to("#Layer_19 circle", { fill: "#ff7246" }, "fourteen-end");
 
 tl5
   .from("#Layer_20", { opacity: 0, scale: 1 }, "fifteen-0")
   .to("#Layer_20", { scale: 1.5 }, "fifteen")
   .to("#Layer_20 circle", { fill: "#ff0000" }, "fifteen")
-  .to("#Layer_20", { scale: 1 }, "fifteen-end");
+  .to("#Layer_20", { scale: 1 }, "fifteen-end")
+  .to("#Layer_20 circle", { fill: "#ff7246" }, "fifteen-end");
 
 // zoom into Scene
 tl5.to(
@@ -828,13 +832,15 @@ tl5
   .to("#Layer_21", { scale: 1.5 }, "twenty")
   .to("#Layer_21 circle", { fill: "#ff0000" }, "twenty")
   .to("#Layer_21", { scale: 1 }, "twenty-end")
+  .to("#Layer_21 circle", { fill: "#ff7246" }, "twenty-end")
   .to("#Layer_21 circle", { fill: "#ff7246" }, "twenty-end");
 
 tl5
   .from("#Layer_22", { opacity: 0, scale: 1 }, "twentytone-0")
   .to("#Layer_22", { scale: 1.5 }, "twentytone")
   .to("#Layer_22 circle", { fill: "#ff0000" }, "twentytone")
-  .to("#Layer_22", { scale: 1 }, "twentytone-end");
+  .to("#Layer_22", { scale: 1 }, "twentytone-end")
+  .to("#Layer_22 circle", { fill: "#ff7246" }, "twentyone-end");
 
 // zoom into Scene
 tl5.to(
@@ -858,13 +864,15 @@ tl5
   .from("#Layer_23", { opacity: 0, scale: 1 }, "twentysix-0")
   .to("#Layer_23", { scale: 1.5 }, "twentysix")
   .to("#Layer_23 circle", { fill: "#ff0000" }, "twentysix")
-  .to("#Layer_23", { scale: 1 }, "twentysix-end");
+  .to("#Layer_23", { scale: 1 }, "twentysix-end")
+  .to("#Layer_23 circle", { fill: "#ff7246" }, "twentysix-end");
 
 tl5
   .from("#Layer_24", { opacity: 0, scale: 1 }, "twentyseven-0")
   .to("#Layer_24", { scale: 1.5 }, "twentyseven")
   .to("#Layer_24 circle", { fill: "#ff0000" }, "twentyseven")
-  .to("#Layer_24", { scale: 1 }, "twentyseven-end");
+  .to("#Layer_24", { scale: 1 }, "twentyseven-end")
+  .to("#Layer_24 circle", { fill: "#ff7246" }, "twentyseven-end");
 
 // chop / zahony / berehove / vylok / halmeu
 tl5.to(".chop", { opacity: 1 }, "twentyeight");
@@ -877,37 +885,43 @@ tl5
   .from("#Layer_25", { opacity: 0, scale: 1 }, "thirtythree-0")
   .to("#Layer_25", { scale: 1.5 }, "thirtythree")
   .to("#Layer_25 circle", { fill: "#ff0000" }, "thirtythree")
-  .to("#Layer_25", { scale: 1 }, "thirtythree-end");
+  .to("#Layer_25", { scale: 1 }, "thirtythree-end")
+  .to("#Layer_25 circle", { fill: "#ff7246" }, "thirtythree-end");
 
 tl5
   .from("#Layer_26", { opacity: 0, scale: 1 }, "thirtyfour-0")
   .to("#Layer_26", { scale: 1.5 }, "thirtyfour")
   .to("#Layer_26 circle", { fill: "#ff0000" }, "thirtyfour")
-  .to("#Layer_26", { scale: 1 }, "thirtyfour-end");
+  .to("#Layer_26", { scale: 1 }, "thirtyfour-end")
+  .to("#Layer_26 circle", { fill: "#ff7246" }, "thirtyfour-end");
 
 tl5
   .from("#Layer_27", { opacity: 0, scale: 1 }, "thirtyfive-0")
   .to("#Layer_27", { scale: 1.5 }, "thirtyfive")
   .to("#Layer_27 circle", { fill: "#ff0000" }, "thirtyfive")
-  .to("#Layer_27", { scale: 1 }, "thirtyfive-end");
+  .to("#Layer_27", { scale: 1 }, "thirtyfive-end")
+  .to("#Layer_27 circle", { fill: "#ff7246" }, "thirtyfive-end");
 
 tl5
   .from("#Layer_28", { opacity: 0, scale: 1 }, "thirtysix-0")
   .to("#Layer_28", { scale: 1.5 }, "thirtysix")
   .to("#Layer_28 circle", { fill: "#ff0000" }, "thirtysix")
-  .to("#Layer_28", { scale: 1 }, "thirtysix-end");
+  .to("#Layer_28", { scale: 1 }, "thirtysix-end")
+  .to("#Layer_28 circle", { fill: "#ff7246" }, "thirtysix-end");
 
 tl5
   .from("#Layer_29", { opacity: 0, scale: 1 }, "thirtyseven-0")
   .to("#Layer_29", { scale: 1.5 }, "thirtyseven")
   .to("#Layer_29 circle", { fill: "#ff0000" }, "thirtyseven")
-  .to("#Layer_29", { scale: 1 }, "thirtyseven-end");
+  .to("#Layer_29", { scale: 1 }, "thirtyseven-end")
+  .to("#Layer_29 circle", { fill: "#ff7246" }, "thirtyseven-end");
 
 tl5
   .from("#Layer_30", { opacity: 0, scale: 1 }, "thirtyeight-0")
   .to("#Layer_30", { scale: 1.5 }, "thirtyeight")
   .to("#Layer_30 circle", { fill: "#ff0000" }, "thirtyeight")
-  .to("#Layer_30", { scale: 1 }, "thirtyeight-end");
+  .to("#Layer_30", { scale: 1 }, "thirtyeight-end")
+  .to("#Layer_30 circle", { fill: "#ff7246" }, "thirtyeight-end");
 
 // zoom into Scene
 tl5.to(
@@ -928,7 +942,8 @@ tl5
   .from("#Layer_31", { opacity: 0, scale: 1 }, "forty-0")
   .to("#Layer_31", { scale: 1.5 }, "forty")
   .to("#Layer_31 circle", { fill: "#ff0000" }, "forty")
-  .to("#Layer_31", { scale: 1 }, "forty-end");
+  .to("#Layer_31", { scale: 1 }, "forty-end")
+  .to("#Layer_31 circle", { fill: "#ff7246" }, "forty-end");
 
 // zoom into Scene
 tl5.to(
@@ -949,7 +964,8 @@ tl5
   .from("#Layer_32", { opacity: 0, scale: 1 }, "fortytwo-0")
   .to("#Layer_32", { scale: 1.5 }, "fortytwo")
   .to("#Layer_32 circle", { fill: "#ff0000" }, "fortytwo")
-  .to("#Layer_32", { scale: 1 }, "fortytwo-end");
+  .to("#Layer_32", { scale: 1 }, "fortytwo-end")
+  .to("#Layer_32 circle", { fill: "#ff7246" }, "fortytwo-end");
 
 // lipcani / sokyryany / Ocnita / mohyliv
 tl5.to(".lipcani", { opacity: 1 }, "fortythree");
@@ -961,25 +977,29 @@ tl5
   .from("#Layer_33", { opacity: 0, scale: 1 }, "fortythree-0")
   .to("#Layer_33", { scale: 1.5 }, "fortythree")
   .to("#Layer_33 circle", { fill: "#ff0000" }, "fortythree")
-  .to("#Layer_33", { scale: 1 }, "fortythree-end");
+  .to("#Layer_33", { scale: 1 }, "fortythree-end")
+  .to("#Layer_33 circle", { fill: "#ff7246" }, "fortythree-end");
 
 tl5
   .from("#Layer_34", { opacity: 0, scale: 1 }, "fortyfour-0")
   .to("#Layer_34", { scale: 1.5 }, "fortyfour")
   .to("#Layer_34 circle", { fill: "#ff0000" }, "fortyfour")
-  .to("#Layer_34", { scale: 1 }, "fortyfour-end");
+  .to("#Layer_34", { scale: 1 }, "fortyfour-end")
+  .to("#Layer_34 circle", { fill: "#ff7246" }, "fortyfour-end");
 
 tl5
   .from("#Layer_35", { opacity: 0, scale: 1 }, "fortyfive-0")
   .to("#Layer_35", { scale: 1.5 }, "fortyfive")
   .to("#Layer_35 circle", { fill: "#ff0000" }, "fortyfive")
-  .to("#Layer_35", { scale: 1 }, "fortyfive-end");
+  .to("#Layer_35", { scale: 1 }, "fortyfive-end")
+  .to("#Layer_35 circle", { fill: "#ff7246" }, "fortyfive-end");
 
 tl5
   .from("#Layer_36", { opacity: 0, scale: 1 }, "fortysix-0")
   .to("#Layer_36", { scale: 1.5 }, "fortysix")
   .to("#Layer_36 circle", { fill: "#ff0000" }, "fortysix")
-  .to("#Layer_36", { scale: 1 }, "fortysix-end");
+  .to("#Layer_36", { scale: 1 }, "fortysix-end")
+  .to("#Layer_36 circle", { fill: "#ff7246" }, "fortysix-end");
 
 // zoom into Scene
 tl5.to(
@@ -1003,25 +1023,29 @@ tl5
   .from("#Layer_37", { opacity: 0, scale: 1 }, "fiftyone-0")
   .to("#Layer_37", { scale: 1.5 }, "fiftyone")
   .to("#Layer_37 circle", { fill: "#ff0000" }, "fiftyone")
-  .to("#Layer_37", { scale: 1 }, "fiftyone-end");
+  .to("#Layer_37", { scale: 1 }, "fiftyone-end")
+  .to("#Layer_37 circle", { fill: "#ff7246" }, "fiftyone-end");
 
 tl5
   .from("#Layer_38", { opacity: 0, scale: 1 }, "fiftytwo-0")
   .to("#Layer_38", { scale: 1.5 }, "fiftytwo")
   .to("#Layer_38 circle", { fill: "#ff0000" }, "fiftytwo")
-  .to("#Layer_38", { scale: 1 }, "fiftytwo-end");
+  .to("#Layer_38", { scale: 1 }, "fiftytwo-end")
+  .to("#Layer_38 circle", { fill: "#ff7246" }, "fiftytwo-end");
 
 tl5
   .from("#Layer_39", { opacity: 0, scale: 1 }, "fiftythree-0")
   .to("#Layer_39", { scale: 1.5 }, "fiftythree")
   .to("#Layer_39 circle", { fill: "#ff0000" }, "fiftythree")
-  .to("#Layer_39", { scale: 1 }, "fiftythree-end");
+  .to("#Layer_39", { scale: 1 }, "fiftythree-end")
+  .to("#Layer_39 circle", { fill: "#ff7246" }, "fiftythree-end");
 
 tl5
   .from("#Layer_40", { opacity: 0, scale: 1 }, "fiftyfour-0")
   .to("#Layer_40", { scale: 1.5 }, "fiftyfour")
   .to("#Layer_40 circle", { fill: "#ff0000" }, "fiftyfour")
-  .to("#Layer_40", { scale: 1 }, "fiftyfour-end");
+  .to("#Layer_40", { scale: 1 }, "fiftyfour-end")
+  .to("#Layer_40 circle", { fill: "#ff7246" }, "fiftyfour-end");
 
 // zoom out of Scene: The End
 tl5
