@@ -1085,4 +1085,5 @@ var pinOnly5 = ScrollTrigger.create({
   start: "top top",
   end: "+=600%",
   pinSpacing: true,
+  toggleClass: { targets: "#humanitarian-corridor", className: "is-active" },
 });
