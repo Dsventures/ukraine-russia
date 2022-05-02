@@ -715,13 +715,13 @@ tl5
     },
     "zero"
   )
-  .to(
-    "#keep-scrolling",
-    {
-      opacity: 0,
-    },
-    "zero"
-  )
+  .to("#keep-scrolling", {
+    opacity: 1,
+  })
+  .to("#keep-scrolling", {
+    opacity: 0,
+    duration: 10,
+  })
   .to("#humanCorridors", {
     backgroundColor: "#000",
     scale: 1.5,
@@ -1061,7 +1061,7 @@ tl5
     scale: 3,
     x: "-300px",
     y: "-260px",
-    delay: 10,
+    delay: 5,
   })
   .to("#humanCorridors", {
     backgroundColor: "#000",
