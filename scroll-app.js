@@ -715,6 +715,13 @@ tl5
     },
     "zero"
   )
+  .to(
+    "#keep-scrolling",
+    {
+      opacity: 0,
+    },
+    "zero"
+  )
   .to("#humanCorridors", {
     backgroundColor: "#000",
     scale: 1.5,
