@@ -452,6 +452,13 @@ img.gesture {
     width: 150px;
 }
 
+.legend { margin-bottom: 10px;}
+
+.legend-color{
+    background-color: #ff7246; border-radius: 50%;
+    width: 10px; height: 10px;display: inline-block;
+}
+
 /* Animation CSS */
 /* #humanitarian-corridor.is-active {
     margin: 100px 0 0 0 !important;
