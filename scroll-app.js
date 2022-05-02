@@ -720,7 +720,7 @@ tl5
   })
   .to("#keep-scrolling", {
     opacity: 0,
-    duration: 10,
+    duration: 5,
   })
   .to("#humanCorridors", {
     backgroundColor: "#000",
