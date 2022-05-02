@@ -453,9 +453,9 @@ img.gesture {
 }
 
 /* Animation CSS */
-#humanitarian-corridor.is-active {
+/* #humanitarian-corridor.is-active {
     margin: 100px 0 0 0 !important;
-}
+} */
 
 
 @media (max-width: 767px) {
