@@ -699,13 +699,13 @@ sections.forEach((section) => {
 var tl5 = gsap.timeline();
 // zoom into Scene
 
-// tl5.to(
-//   "#humanitarian-corridor",
-//   {
-//     padding: "30px 0",
-//   },
-//   "zero"
-// );
+tl5.to(
+  "#humanitarian-corridor",
+  {
+    padding: "100px 0",
+  },
+  "zero"
+);
 tl5
   .to(
     "#humanCorridors",
