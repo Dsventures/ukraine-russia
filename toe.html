@@ -191,10 +191,8 @@
           <!--14-->
           <li id="apr25-2022" class="time1years">25 Apr 2022</li>
           <!--15-->
-          <li id="may02-2022" class="time1years">02 May 2022</li>
-          <!--16-->
           <li id="may04-2022" class="time1years">04 May 2022</li>
-          <!--17-->
+          <!--16-->
         </ul>
       </nav>
       <div class="swiper mySwiper1">
@@ -344,21 +342,13 @@
             <p>
               Russia destroys several railway stations and military
               installations of Ukraine. US Secretary of state Antony Blinken
-              travels from Poland via train to meet President Zelensky
+              travels from Poland via train to meet President Zelensky (Photo
+              credit: Ukrainian Presidential Press Office/AP)
             </p>
           </div>
           <!--.swiper-slide-->
           <div class="swiper-slide">
             <img src="img/toe/16.jpg" class="timeline__img" alt="" />
-            <!-- <span>02 May 2022</span> -->
-            <p>
-              Odessa city residents claim rocket attack by Russia. Ukraine
-              claims of sinking two patrol boats of Russia.
-            </p>
-          </div>
-          <!--.swiper-slide-->
-          <div class="swiper-slide">
-            <img src="img/toe/17.jpg" class="timeline__img" alt="" />
             <!-- <span>04 May 2022</span> -->
             <p>
               Azovstal iron and steel works attacked by Russian troops, claims
@@ -391,7 +381,7 @@
       function changeSlides(e) {
         var sections = gsap.utils.toArray(".time1years");
 
-        console.log(sections, "sections");
+        // console.log(sections, "sections");
 
         if (swiper.swipeDirection === "next") {
           var allvals = document.getElementsByClassName("time1years");
@@ -440,6 +430,12 @@
           }
         }
       }
+
+      // swiper.on("snapIndexChange", function (e) {
+      //   console.log("e", swiper);
+      //   var sections = gsap.utils.toArray(".time1years");
+      //   // changeSlides(e);
+      // });
 
       swiper.on("slideChange", function (e) {
         changeSlides(e);
