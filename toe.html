@@ -110,7 +110,7 @@
       .sec1-years::after {
         content: "";
         position: absolute;
-        width: 760%;
+        width: 935%;
         height: 0.1em;
         background-color: black;
         bottom: 0;
@@ -387,7 +387,8 @@
           prevEl: ".swiper-button-prev",
         },
       });
-      swiper.on("slideChange", function (e) {
+
+      function changeSlides(e) {
         var sections = gsap.utils.toArray(".time1years");
 
         console.log(sections, "sections");
@@ -407,11 +408,11 @@
             });
           } else if (swiper.activeIndex >= 5 && swiper.activeIndex < 9) {
             var tl = gsap.timeline().to(".sec1-years", {
-              x: "-" + swiper.activeIndex * 115 + "px",
+              x: "-" + swiper.activeIndex * 120 + "px",
             });
           } else if (swiper.activeIndex >= 9) {
             var tl = gsap.timeline().to(".sec1-years", {
-              x: "-" + swiper.activeIndex * 120 + "px",
+              x: "-" + swiper.activeIndex * 125 + "px",
             });
           }
         } else if (swiper.swipeDirection === "prev") {
@@ -430,14 +431,18 @@
             });
           } else if (swiper.activeIndex >= 5 && swiper.activeIndex < 9) {
             var tl2 = gsap.timeline().to(".sec1-years", {
-              x: "-" + swiper.activeIndex * 115 + "px",
+              x: "-" + swiper.activeIndex * 120 + "px",
             });
           } else if (swiper.activeIndex >= 9) {
             var tl2 = gsap.timeline().to(".sec1-years", {
-              x: "-" + swiper.activeIndex * 120 + "px",
+              x: "-" + swiper.activeIndex * 125 + "px",
             });
           }
         }
+      }
+
+      swiper.on("slideChange", function (e) {
+        changeSlides(e);
       });
     </script>
   </body>
